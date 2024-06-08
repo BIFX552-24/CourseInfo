@@ -1,0 +1,10 @@
+project: 
+  output-dir: docs/standalone
+  render: 
+    - hw/L01markdown.qmd
+
+format:
+  html:
+    theme: 
+      light: flatly
+      dark: darkly

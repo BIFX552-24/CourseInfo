@@ -1,0 +1,32 @@
+project: 
+  type: book
+  output-dir: docs
+
+number-depth: 1
+
+book:
+  title: "BIFX 552 - Bioinformatics Data Skills"
+  subtitle: "Fall 2024"
+  repo-url: "https://github.com/BIFX552-24/CourseInfo"
+  repo-actions: [issue, source]
+  page-footer: 
+    left: |
+      Copyright Randy Johnson, released under Creative Commons Attribution-ShareAlike 4.0.
+  sidebar:
+    collapse-level: 2
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: Labs
+      chapters:
+        - labs/01markdown.qmd
+#    - part: Asynchronous Content
+
+format: 
+  html:
+    theme: 
+      light: flatly
+      dark: darkly
+    execute:
+      echo: true
+      code-fold: true

@@ -1,0 +1,6 @@
+project: 
+  output-dir: docs/standalone
+  render: 
+    - labs/01markdown.qmd
+
+format: revealjs
