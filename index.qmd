@@ -1,0 +1,198 @@
+---
+title: "CourseInfo"
+execute: 
+  echo: false
+---
+
+<!-- 
+# render syllabus with
+quarto render --profile docx
+
+# render all slides with
+quarto render --profile slides
+-->
+
+```{r}
+#| include: false
+knitr::opts_chunk$set(echo = FALSE)
+
+library(knitr)
+library(magrittr)
+library(dplyr)
+```
+
+# Welcome to BIFX 552 - Bioinformatics Data Skills  {.unnumbered}
+
+## Syllabus
+
+### Course Description
+
+This class provides an introduction to applied data science skills needed by bioinformatics professionals. A focus will be placed on reproducible bioinformatics research and will include the following topics and tools: beginning to intermediate use of the Unix command line, working with remote computing resources, version tracking, R and Bioconductor, tools for manipulating sequence data, and creation of pipelines.
+
+-   Instructor: Randall Johnson, PhD
+-   Office hours: Office hours will be held immediately before and after in-person meetings. Email me to schedule a virtual office hour at another time.
+-   Prerequisites: BIFX 503
+-   Textbooks: We will not be using a textbook this term, but you may find the following helpful. All are freely available online.
+    -   [R for Data Science](https://r4ds.had.co.nz/)
+    -   [Advanced R](https://adv-r.hadley.nz/)
+    -   [R Packages](https://r-pkgs.org/)
+-   Communications: Course communications will be posted on [Blackboard](https://hood.blackboard.com).
+-   Code of Conduct: We want to foster a safe, enjoyable and productive learning environment. People like you add value to our program. To meet this end, all participants will be expected to follow the [course code of conduct](https://bifx552-24.github.io/code_of_conduct.html) located in the course documents on Blackboard.
+-   [GradCare](https://www.hood.edu/hood-community/hood-college-health-wellness/gradcare): Graduate school can be stressful. Hood College is here to help. We offer a wide range of support services for graduate students. Our programs and resources address the eight dimensions of wellness—emotional, physical, social, intellectual, spiritual, occupational, financial and environmental—so you can stay healthy while maintaining school-work-life balance.
+-   Accessibility: As the instructor of this course, I endeavor to provide an inclusive learning environment. However, if you experience barriers to learning in this course, do not hesitate to discuss them with me and the Office for Accessibility Services, 301-696-3421, gmuer\@hood.edu.
+
+### Learning Objectives
+
+On completion of this course, students should be comfortable with the following:
+
+-   Use of R and Bioconductor to perform bioinformatic analysis tasks
+-   Use of the Unix command line to manipulate data and perform bioinformatic analysis tasks
+-   Logging into and using remote computing resources
+-   Working with version controlled code repositories in a collaborative work environment
+-   Stitching a series of commands and/or programs together into a reusable pipeline
+
+### Asynchronous and In-Person Content
+
+Asynchronous content will be posted weekly, and in-person labs will be scheduled on Tuesday evenings throughout the term at 5:30 PM (see the schedule below). If you need to attend a particular class virtually (e.g. while on travel), in-person labs can be streamed. Course content will be based on up-to-date, publicly available material from experts in the [Data Carpentry](https://datacarpentry.org/), [Software Carpentry](https://software-carpentry.org/), and [Bioconductor](https://bioconductor.org/) communities.
+
+### Homework and Course Project
+
+There will be homework assignments associated with each course module. This will give you an opportunity to practice what we cover each week. Homework from asynchronous content will be due on Tuesdays and should be completed before each in-person meeting. The last few weeks of the course will be devoted to a group project based on a bioinformatics workflow from Bioconductor.
+
+### Grading
+
+Grades will be based on completion of homework, a group project and two exams.
+
+-   Asynchronous Content - 25%
+-   In-person Content - 25%
+-   Bioconductor Project - 10%
+-   Mid-term - 20%
+-   Final exam - 20%
+
+Late submissions of any work will be subject to a 5% penalty for each day past the due date. The maximum penalty for late work will be 50%.
+
+### Weather
+
+In the event of severe weather resulting in the closure of Hood College and the cancellation of an in-person meeting, the meeting will be held virtually at the scheduled time and a recording posted on Blackboard for asynchronous viewing.
+
+### Tentative Class Schedule
+
+```{r schedule}
+#### Git and GitHub ####
+schedule <- 
+    tibble(Week = 1,
+           Date = 'Aug 20', 
+           `Coding Demo` =       'Git',
+           Lab           = paste('[Class intro](https://bifx552-24.github.io/CourseInfo/),',
+                                 '[Markdown / Quarto](labs/01markdown)'))
+
+#### R for Reproducible Research ####
+gapminder <- 'https://swcarpentry.github.io/r-novice-gapminder/'
+bioc_intro <- 'https://carpentries-incubator.github.io/bioc-intro/'
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 2,
+               Date = 'Aug 27', 
+               `Coding Demo` = 'R Intro',
+               Lab           = '[git practice](https://learngitbranching.js.org)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 3,
+               Date = 'Sep 3', 
+               `Coding Demo` = 'Subsetting Data, R Control Flow',
+               Lab           = '[P-Hacking](labs/02phacking)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 4,
+               Date = 'Sep 10', 
+               `Coding Demo` = 'R Graphics, R Vectorization, R Functions',
+               Lab           = '[RNA-Seq Data Viz](labs/03RNA-seq-data)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 5,
+               Date = 'Sep 17', 
+               `Coding Demo` = 'R Advanced Data',
+               Lab           = '[Canine Confounders](labs/04COVID)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 6,
+               Date = 'Sep 24', 
+               `Coding Demo` = 'Joining Tables, R Software Tips',
+               Lab           = '[Antibiotics Under Our Feet](labs/05Antibiotics-under-our-feet)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 7,
+               Date = 'Oct 1',
+               `Coding Demo` = '*Catch Up*',
+               Lab           = '*Review/Synthesis*'))
+
+#### Midterm ####
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 8,
+               Date = 'Oct 8', 
+               `Coding Demo` = '*Midterm*',
+               Lab           = "*Midterm Q/A (virtual)*"))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 9,
+               Date = 'Oct 15',
+               `Coding Demo` = '*Fall break*',
+               Lab           = '*(no class)*'))
+
+#### UNIX and Snakemake ####
+shell_genomics <- 'https://datacarpentry.org/shell-genomics/'
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 10,
+               Date = 'Oct 22', 
+               `Coding Demo` = 'Unix',
+               Lab           = '[Command Line Practice](labs/06Command-line-practice)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 11,
+               Date = 'Oct 29', 
+               `Coding Demo` = 'Snakemake', # modules 1 - 4
+               Lab           = '[Docker practice](labs/07Docker-practice)'))
+
+#### Variant Calling and Snakemake ####
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 12,
+               Date = 'Nov 5', 
+               `Coding Demo` = 'Variant Calling Workflow',
+               Lab           = '[Variant Calling Pipeline](labs/08variant-calling-pipeline)'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 13,
+               Date = 'Nov 12', 
+               `Coding Demo` = 'Advanced Snakemake', # modules (5-8)
+               Lab           = '[Variant Calling Pipeline (cont)](labs/08variant-calling-pipeline)'))
+
+#### Bioconductor ####
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 14,
+               Date = 'Nov 19', 
+               `Coding Demo` = 'Intro to Bioconductor',
+               Lab           = 'Bioconductor Project'))
+# review Bioconductor project site
+# review Biostrings vignette(s) https://www.bioconductor.org/packages/release/bioc/html/Biostrings.html
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 15,
+               Date = 'Nov 26', 
+               `Coding Demo` = '*Group Work*',
+               Lab           = '*Project Q/A (in person)*'))
+
+schedule <- bind_rows(schedule,
+        tibble(Week = 16,
+               Date = 'Dec 3', 
+               `Coding Demo` = '*Group Work*',
+               Lab           = 'Project Presentations / Final Exam'))
+
+rename(schedule,
+       `Asynchronous Content` = `Coding Demo`,
+       `In Person Content` = Lab) %>%
+    kable()
+```
