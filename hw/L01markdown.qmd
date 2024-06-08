@@ -1,0 +1,20 @@
+---
+title: "Markdown / Quarto Lab"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://example.com" title="Markdown / Quarto Lab"></iframe>
+
+Due Date: Aug 20 @ end of day
+Points: 10
+Display after: Aug 20 @ 5 PM
+-->
+
+Complete the [Markdown / Quarto lab](labs/01markdown/) and upload your word document here.
+
+For full credit:
+
+* Your code should replicate the [Iris intro page](https://rpubs.com/moeransm/intro-iris).
+* Your GitHub html page should be visible at https://bifx552-24.github.io/Markdown-and-Quarto-yourusername/iris.html
+* Upload your word version to Blackboard.

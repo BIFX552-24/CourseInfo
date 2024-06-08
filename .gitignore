@@ -1,4 +1,5 @@
 .quarto/
+*.Rproj
 .Rproj.user/
 index_cache/
 word/
