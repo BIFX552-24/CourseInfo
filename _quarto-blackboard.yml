@@ -8,6 +8,9 @@ project:
     - hw/L05COVID.qmd
     - hw/L06Antibiotics-under-our-feet.qmd
     - hw/L07HWE.qmd
+    - hw/L08Command-line-practice.qmd
+    - hw/L09Docker.qmd
+    - hw/L10Variant-calling-pipeline.qmd
 
 format:
   html:

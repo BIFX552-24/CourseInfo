@@ -20,7 +20,10 @@ book:
     collapse-level: 2
   page-navigation: true
   chapters:
-    - index.qmd
+    - part: Course Information
+      chapters:
+        - index.qmd
+        - code_of_conduct.qmd
     - part: Labs
       chapters:
         - labs/01markdown.qmd
@@ -30,7 +33,12 @@ book:
         - labs/05COVID.qmd
         - labs/06Antibiotics-under-our-feet.qmd
         - labs/07HWE.qmd
-#    - part: Asynchronous Content
+        - labs/08Command-line-practice.qmd
+        - labs/09Docker.qmd
+        - labs/10Variant-calling-pipeline.qmd
+    - part: Asynchronous Content
+      chapters:
+        - hw/H01git.qmd
 
 format: 
   html:

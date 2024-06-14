@@ -1,0 +1,26 @@
+---
+title: "Command Line Practice"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L08Command-line-practice.html" title="Command Line Practice"></iframe>
+
+Due Date: Oct 22 @ end of day
+Points: 10
+Display after: Oct 22 @ 5 PM
+-->
+
+## Instructions
+
+Complete the [Command Line Practice](https://bifx552-24.github.io/CourseInfo/labs/08Command-line-practice.html) exercises and submit a link to your repository here.
+
+## Grading
+
+For full credit:
+
+* Submit a link to your repository on time.
+* Your repository should have the following elements:
+  * A README describing the repository
+  * An R script generating a figure
+  * A png of the figure

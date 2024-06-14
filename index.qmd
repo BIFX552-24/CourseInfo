@@ -151,13 +151,13 @@ schedule <- bind_rows(schedule,
         tibble(Week = 10,
                Date = 'Oct 22', 
                `Coding Demo` = 'Unix',
-               Lab           = '[Command Line Practice](labs/06Command-line-practice)'))
+               Lab           = '[Command Line Practice](labs/08Command-line-practice.html)'))
 
 schedule <- bind_rows(schedule,
         tibble(Week = 11,
                Date = 'Oct 29', 
                `Coding Demo` = 'Snakemake', # modules 1 - 4
-               Lab           = '[Docker practice](labs/07Docker-practice)'))
+               Lab           = '[Docker practice](labs/09Docker-practice.html)'))
 
 #### Variant Calling and Snakemake ####
 
@@ -165,13 +165,13 @@ schedule <- bind_rows(schedule,
         tibble(Week = 12,
                Date = 'Nov 5', 
                `Coding Demo` = 'Variant Calling Workflow',
-               Lab           = '[Variant Calling Pipeline](labs/08variant-calling-pipeline)'))
+               Lab           = '[Variant Calling Pipeline](labs/10variant-calling-pipeline.html)'))
 
 schedule <- bind_rows(schedule,
         tibble(Week = 13,
                Date = 'Nov 12', 
                `Coding Demo` = 'Advanced Snakemake', # modules (5-8)
-               Lab           = '[Variant Calling Pipeline (cont)](labs/08variant-calling-pipeline)'))
+               Lab           = '[Variant Calling Pipeline (cont)](labs/10variant-calling-pipeline.html)'))
 
 #### Bioconductor ####
 

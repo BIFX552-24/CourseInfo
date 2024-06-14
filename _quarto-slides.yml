@@ -8,6 +8,9 @@ project:
     - labs/05COVID.qmd
     - labs/06Antibiotics-under-our-feet.qmd
     - labs/07HWE.qmd
+    - labs/08Command-line-practice.qmd
+    - labs/09Docker.qmd
+    - labs/10Variant-calling-pipeline.qmd
 
 author: "Dr Randy Johnson"
 institute: "Hood College"

@@ -1,0 +1,27 @@
+---
+title: "Variant Calling Pipeline"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L10Variant-calling-pipeline.html" title="Markdown / Quarto Lab"></iframe>
+
+Due Date: Nov 12 @ end of day
+Points: 20
+Display after: Nov 5 @ 5 PM
+-->
+
+
+## Instructions
+
+This lab will span two weeks. Complete the [Variant Calling Pipeline](https://bifx552-24.github.io/CourseInfo/labs/10variant-calling-pipeline.html) exercises and submit a link to your repository here.
+
+## Grading
+
+For full credit:
+
+* Submit a link to your repository on time.
+* Your repository should have the following elements:
+  * A README describing the repository
+  * A Snakefile with the pipeline
+  * A .gitignore file

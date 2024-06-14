@@ -1,0 +1,128 @@
+---
+title: "Docker Practice"
+date: "2024-10-29"
+margin-footer: "[Slides](/standalone/labs/09Docker.html), [Assignment](/standalone/hw/L09Docker.html)"
+---
+
+## Today's lab
+
+-   Compose a Docker container that could be used for the variant calling modules you will be working with this week.
+
+:::{.content-visible when-profile="book"}
+## Docker composition
+
+1. Create a git repository for your Docker container and clone it to your laptop. Create the following in your cloned repository:
+  * An RStudio project
+  * `.gitignore`
+  * `Dockerfile`
+
+2. Start up a Docker container with Ubuntu:
+
+```
+docker run -it ubuntu bash
+```
+
+3. Open your Dockerfile and start with the following header:
+
+```
+# Dockerfile for variant-calling
+
+# start with Ubuntu
+FROM ubuntu
+
+# install dependencies
+RUN apt-get update && apt-get install -y \
+```
+
+4. Verify that the following commands will run inside of your running Ubuntu container. Copy all commands you run to your Dockerfile to document what you have done. (Add any needed dependencies while you are at it.)
+
+  * Install miniconda
+    * `wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh`
+    * `mkdir ~/miniconda3`
+    * `bash Miniconda3-latest-Linux-x86_64.sh -b -u -p ~/miniconda3`
+    * `~/miniconda3/bin/conda init bash`
+    * `rm /Miniconda3-latest-Linux-x86_64.sh`
+  * Install software
+    * `~/miniconda3/bin/conda install -c bioconda fastqc -y`
+    * `~/miniconda3/bin/conda install -c bioconda trimmomatic -y`
+    * `~/miniconda3/bin/conda install -c bioconda bwa -y`
+    * `~/miniconda3/bin/conda install -c bioconda samtools -y`
+    * `~/miniconda3/bin/conda install -c bioconda bcftools -y`
+
+5. Exit from your container and start it back up in the Docker dashboard. Start up a commandline session in your terminal with the following command (where `name-of-container` is the name of your container in Docker dashboard - mine was "*heuristic_driscoll*" when I was testing this):
+
+```
+# get name of container (or look in Docker Desktop)
+docker ps -a
+
+# start up bash
+docker exec -it name-of-container bash
+```
+
+6. Verify that everything was properly installed, and add this closing statement to your `Dockerfile`:
+
+```
+# start with bash
+CMD ["/bin/sh", "-c", "exec bash"]
+```
+
+
+### Running with Singularity
+
+If you are unable to install Docker Desktop on your local computer, you can complete this exercise using Singularity on the cluster.
+
+1. Create and clone the repository to the cluster as described in step 1 above.
+
+2. Start up an Ubuntu VM on the cluster with the following command:
+
+<!-- this presumes singularity is working on the server :P, would still like to get this working -->
+```
+# log into CN001
+srun --pty bash
+
+# start up the container
+singularity run -w -f docker://ubuntu:latest
+```
+
+3. Follow step 3 as described above.
+
+4. Follow step 4 as described above.
+
+5. *skip this step for now*
+
+6. Follow step 6 as described above.
+:::
+
+:::{.content-visible when-profile="slides"}
+
+## Setup
+
+1. Create a git repository for your Docker container and clone it to your laptop. (set up in GitHub Classroom)
+2. Install and start up Docker Desktop. (link to https://docs.docker.com/desktop/install/mac-install/)
+
+## Interactive Ubuntu container
+
+3. Start up a Docker container with Ubuntu.
+
+## Docker composition
+
+4. Begin writing your Dockerfile.
+5. Check commands as you write them.
+
+## Completion
+6. Finish your Dockerfile. (add commands to starting up, discussion of staritng with/out saving state)
+
+## Running with Singularity
+
+Verify and fill this section out
+
+:::
+
+<!--
+### Run on Dr Johnson's computer
+
+And, if it isn't working on the server... Log into Dr Johnson's laptop using ssh.
+
+* Need to have an account set up for them.
+* Need to have Docker Desktop running on their account (switch accounts without logging out)
+-->

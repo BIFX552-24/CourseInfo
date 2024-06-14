@@ -1,0 +1,25 @@
+---
+title: "Docker Practice"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L09Docker.html" title="Docker Practice"></iframe>
+
+Due Date: Oct 29 @ end of day
+Points: 10
+Display after: Oct 29 @ 5 PM
+-->
+
+## Instructions
+
+Complete the [Docker Practice](https://bifx552-24.github.io/CourseInfo/labs/07Docker.html) exercises and submit a link to your repository here.
+
+## Grading
+
+For full credit:
+
+* Submit a link to your repository on time.
+* Your repository should have the following elements:
+  * A README describing the repository
+  * A Dockerfile
