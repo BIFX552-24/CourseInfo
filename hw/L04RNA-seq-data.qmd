@@ -1,0 +1,22 @@
+---
+title: "RNA-seq data"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L04RNA-seq-data.html" title="RNA-seq data"></iframe>
+
+Due Date: Sept 10 @ end of day
+Points: 10
+Display after: Sept 10 @ 5 PM
+-->
+
+## Instructions
+
+Complete the [RNA-Seq Data lab](https://bifx552-24.github.io/CourseInfo/labs/04RNA-seq-data.html) and upload a word document with your work here. You can fork this repository [here](https://classroom.github.com/a/Yz2GMIqU).
+
+## For full credit:
+
+* Your code should replicate the images [here](https://bifx552-24.github.io/CourseInfo/labs/04RNA-seq-data.html).
+* Your Github html page should be visible at https://bifx552-24.github.io/RNA-Seq-data-yourusername/
+* Upload your word document here.

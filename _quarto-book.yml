@@ -2,6 +2,10 @@ project:
   type: book
   output-dir: docs
 
+author: "Dr Randy Johnson"
+institute: "Hood College"
+date: "last-modified"
+
 number-depth: 1
 
 book:
@@ -20,6 +24,12 @@ book:
     - part: Labs
       chapters:
         - labs/01markdown.qmd
+        - labs/02git.qmd
+        - labs/03phacking.qmd
+        - labs/04RNA-seq-data.qmd
+        - labs/05COVID.qmd
+        - labs/06Antibiotics-under-our-feet.qmd
+        - labs/07HWE.qmd
 #    - part: Asynchronous Content
 
 format: 

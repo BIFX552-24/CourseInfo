@@ -1,10 +1,6 @@
 project:
   title: "BIFX-552 CourseInfo"
 
-date: "last-modified"
-author: "Dr Randy Johnson"
-institute: "Hood College"
-
 execute:
   warning: false
   cache: true

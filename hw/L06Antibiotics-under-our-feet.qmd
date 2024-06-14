@@ -1,0 +1,23 @@
+---
+title: "Antibiotics Under Our Feet"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L06Antibiotics-under-our-feet.html" title="Antibiotics Under Our Feet"></iframe>
+
+Due Date: Sept 24 @ end of day
+Points: 10
+Display after: Sept 24 @ 5 PM
+-->
+
+## Instructions
+
+Complete the [Antibiotics Under Our Feet](https://bifx552-24.github.io/CourseInfo/labs/06Antibiotics-under-our-feet.html) lab and submit a link to your repository here.
+
+## Grading
+
+For full credit:
+
+* Your code should replicate the [Antibiotics Under Our Feet](https://bifx552-24.github.io/CourseInfo/labs/06AntibioticsUnderOurFeet.html) lab.
+* You may choose to publish as a REAME.md or as an HTML page.

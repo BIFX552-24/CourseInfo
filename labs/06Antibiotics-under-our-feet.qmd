@@ -1,0 +1,140 @@
+---
+title: "Antibiotics Under Our Feet"
+date: "2024-09-24"
+margin-footer: "[Slides](/standalone/labs/06Antibiotics-under-our-feet.html), [Assignment](/standalone/hw/L06Antibiotics-under-our-feet.html)"
+---
+
+## Today's lab
+
+- Review of the AUOF dataset
+- Cean up the dataset
+- Exploratory data analysis
+
+## AUOF dataset
+
+The dataset we will be using comes from a study called Antibiotics Under Our Feet[^1]. It has been [shared on figshare](https://figshare.com/articles/dataset/Antibiotics_under_our_feet_investigating_antimicrobial_resistance_Scotland_/23770230).
+
+The dataset contains information on microbes found in six soil samples.
+
+:::{.content-visible when-profile="book"}
+* Taxonomy
+* Associated diseases
+* Antibiotic resistance
+* Method of action of the antibiotics
+* Whether the microbe was observed in the soil samples
+:::
+
+[^1]: Gul, Anum; Mackenzie, Dylan; Shahid, Aleena; Tawfeeq, Tawfeeq; Cornwell, Rebecca; Czekster, Clarissa Melo (2023). Antibiotics under our feet: investigating antimicrobial resistance (Scotland). figshare. Dataset. <https://doi.org/10.6084/m9.figshare.23770230.v1>
+
+```{r setup}
+#| echo: false
+#| include: false
+library(dplyr)
+library(readxl)
+library(stringr)
+library(purrr)
+
+library(ggplot2)
+library(cowplot)
+theme_set(theme_cowplot())
+
+library(knitr)
+library(kableExtra)
+
+# read in taxonomy for each microbe
+tax <- read_excel('data/AUOF investigating antimicrobial resistance student spreadsheet.xlsx',
+                  sheet = 'Taxonomy') %>%
+  
+  # split out taxonomy levels
+  mutate(Lineage = map(Lineage, ~ str_split(.x, '; ')[[1]]),
+         Domain  = map_chr(Lineage, ~ .x[1]),
+         Kingdom = map_chr(Lineage, ~ .x[2]),
+         Phylum  = map_chr(Lineage, ~ .x[3]),
+         Class   = map_chr(Lineage, ~ .x[4]),
+         Order   = map_chr(Lineage, ~ .x[5]),
+         Family  = map_chr(Lineage, ~ .x[6]),
+         Genus   = map_chr(Lineage, ~ .x[7]))
+
+
+# read in study data
+dat <- read_excel('data/AUOF investigating antimicrobial resistance student spreadsheet.xlsx',
+                  sheet = 2) %>%
+  
+  # rename columns
+  rename(Kingdom = `Classification - bacteria, fungi?`,
+         Disease_long = `What disease does it cause?`,
+         Resistance = `Antimicrobial that it was resistant to?`,
+         Action_long = `Method of action of antimicrobial drug?`,
+         Observed_long = `Microbe species present our soil samples?`) %>%
+  
+         # fix misspelling of Citrobacter freundii
+  mutate(Microbe = ifelse(Microbe == 'Citrobacter fruendii', 'Citrobacter freundii', Microbe),
+         
+         # categorize antimicrobial action
+         Action = case_when(grepl(              'peptidoglycan', Action_long) ~ 'Peptidoglycan inhibition',
+                            grepl('penicillin-binding proteins', Action_long) ~ 'PBP',
+                            grepl( 'penecilin-binding proteins', Action_long) ~ 'PBP',
+                            grepl(      'egrosterol|ergosterol', Action_long) ~ 'Ergosterol inhibition',
+                            grepl(       'interacting with DNA', Action_long) ~ 'DNA interactions',
+                            grepl(              'glucan|gulcan', Action_long) ~ 'Glucan inhibition',
+                            grepl(                  'cell wall', Action_long) ~ 'Cell wall disruption',
+                            grepl(           'mucopeptide wall', Action_long) ~ 'Cell wall disruption',
+                            grepl(              'cell membrane', Action_long) ~ 'Cell wall disruption',
+                            grepl(         'ribosome|ribosomal', Action_long) ~ 'Translation disruption',
+                            TRUE                                              ~ 'Other'),
+         
+         # observed into a logical variable
+         Observed = grepl('Yes', Observed_long)) %>%
+         
+  
+  # remove "EXAMPLE" row
+  filter(!grepl("EXAMPLE", Microbe)) %>%
+  
+  # merge taxonomy data into the dat
+  select(-Kingdom) %>% # drop this, as it 
+  left_join(tax)
+```
+
+## Data summary
+
+```{r}
+#| echo: false
+tab <- group_by(dat, Action) %>%
+  summarize(`Number of Microbes` = n(),
+            Observed = sum(Observed)) %>%
+  ungroup() %>%
+  kable(caption = "Number of microbes with documented antimicrobial resistance that were targetd by this study, grouped by antimicrobial action, and the number of microbes found in study samples.")
+```
+
+:::{.content-visible when-profile="book"}
+```{r}
+#| echo: false
+tab
+```
+:::
+
+:::{.content-visible when-profile="slides"}
+```{r}
+tab |> 
+  kable_styling(font_size=28)
+```
+:::
+
+
+## Phyla
+
+```{r}
+#| echo: false
+ggplot(dat, aes(Phylum)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+## Classes
+
+```{r}
+#| echo: false
+ggplot(dat, aes(Class)) +
+  geom_bar() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```

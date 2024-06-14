@@ -1,0 +1,78 @@
+---
+title: "git practice"
+date: "2024-08-27"
+margin-footer: "[Slides](/standalone/labs/02git.html), [Assignment](/standalone/hw/L02git.html)"
+---
+
+## Today's Lab
+
+- Practice git commands at [Learn Git Branching](https://learngitbranching.js.org/)
+
+:::{.content-visible when-profile="slides"}
+
+- Bioinformatics tools survey: a collaborative exercise using git
+:::
+
+:::{.content-visible when-profile="book"}
+- Bioinformatics tools survey: a collaborative exercise using git
+  - You'll need a [GitHub account](https://github.com) and git. I recommend installing [Sourcetree](https://www.sourcetreeapp.com/) or something similar.
+:::
+
+
+## Learn Git Branching <!-- 30 minutes or less -->
+
+Work on the following practice modules of [Learn Git Branching](https://learngitbranching.js.org/)
+
+- Introduction Sequence
+- Ramping Up
+- Moving Work Around
+- A Mixed Bag
+
+
+## Setup bioinformatics tools survey <!-- 15 minutes -->
+
+:::{.content-visible when-profile="slides"}
+- Break up into groups of 2 - 4 students and create a [bioinformatics tools survey](need link) assignment repository together.
+:::
+:::{.content-visible when-profile="book"}
+- Break up into groups of 2 - 4 students and create a [bioinformatics tools survey](need link) assignment repository together.
+  - The first student will need to create a group in GitHub classroom (follow the link above).
+  - Subsequent group members can then join the group on GitHub classroom.
+:::
+
+- Everyone clone the group repository to their individual computers.
+
+- Everyone find a few bioinformatics tools and add them to the csv file, `tools.csv`.
+
+- Stage, commit and push your changes to GitHub, dealing with any merge conflicts as a team.
+
+
+## Feature branching <!-- 30 minutes -->
+
+:::{.content-visible when-profile="slides"}
+- Everyone pick a different piece of information to add to the chart.
+:::
+:::{.content-visible when-profile="book"}
+- Everyone pick a different piece of information to add to the chart.
+  - Documentation (add a link to the documentation - eg [Genome Analysis Toolkit](https://gatk.broadinstitute.org/hc/en-us))
+  - Technology (type or source of data)
+  - OS (operating systems it will run on)
+  - Cost (license cost)
+:::
+
+- Everyone create a new branch for your feature and check it out.
+
+- Update `tools.csv` with the information for your feature.
+
+- Stage, commit and push your branch to GitHub.
+
+
+## Collaboration and integration <!-- 45 minutes -->
+
+- Switch back to the master branch.
+
+- Everyone pick a feature branch that you didn't create and pull remote changes.
+
+- Merge the changes from the feature branch you just pulled into `main`.
+
+- Push your changes to GitHub, dealing with conflicts as a team.

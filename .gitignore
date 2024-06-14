@@ -2,5 +2,7 @@
 .Rproj.user/
 index_cache/
 word/
+.DS_Store
+.Rhistory
 
 /.quarto/

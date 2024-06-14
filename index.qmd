@@ -5,11 +5,15 @@ execute:
 ---
 
 <!-- 
-# render syllabus with
-quarto render --profile docx
+# render/preview website with (default profile is "book")
+quarto render
+quarto preview
 
 # render all slides with
 quarto render --profile slides
+
+# render syllabus with
+quarto render --profile docx
 -->
 
 ```{r}
@@ -84,7 +88,7 @@ schedule <-
            Date = 'Aug 20', 
            `Coding Demo` =       'Git',
            Lab           = paste('[Class intro](https://bifx552-24.github.io/CourseInfo/),',
-                                 '[Markdown / Quarto](labs/01markdown)'))
+                                 '[Markdown / Quarto](labs/01markdown.html)'))
 
 #### R for Reproducible Research ####
 gapminder <- 'https://swcarpentry.github.io/r-novice-gapminder/'
@@ -100,31 +104,31 @@ schedule <- bind_rows(schedule,
         tibble(Week = 3,
                Date = 'Sep 3', 
                `Coding Demo` = 'Subsetting Data, R Control Flow',
-               Lab           = '[P-Hacking](labs/02phacking)'))
+               Lab           = '[p-Hacking](labs/03phacking.html)'))
 
 schedule <- bind_rows(schedule,
         tibble(Week = 4,
                Date = 'Sep 10', 
                `Coding Demo` = 'R Graphics, R Vectorization, R Functions',
-               Lab           = '[RNA-Seq Data Viz](labs/03RNA-seq-data)'))
+               Lab           = '[RNA-Seq Data Viz](labs/04RNA-seq-data.html)'))
 
 schedule <- bind_rows(schedule,
         tibble(Week = 5,
                Date = 'Sep 17', 
                `Coding Demo` = 'R Advanced Data',
-               Lab           = '[Canine Confounders](labs/04COVID)'))
+               Lab           = '[Canine Confounders](labs/05COVID.html)'))
 
 schedule <- bind_rows(schedule,
         tibble(Week = 6,
                Date = 'Sep 24', 
                `Coding Demo` = 'Joining Tables, R Software Tips',
-               Lab           = '[Antibiotics Under Our Feet](labs/05Antibiotics-under-our-feet)'))
+               Lab           = '[Antibiotics Under Our Feet](labs/06Antibiotics-under-our-feet.html)'))
 
 schedule <- bind_rows(schedule,
         tibble(Week = 7,
                Date = 'Oct 1',
                `Coding Demo` = '*Catch Up*',
-               Lab           = '*Review/Synthesis*'))
+               Lab           = '[Population Genetics Simulation](labs/07HWE.html)'))
 
 #### Midterm ####
 

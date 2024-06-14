@@ -2,6 +2,12 @@ project:
   output-dir: docs/standalone
   render: 
     - hw/L01markdown.qmd
+    - hw/L02git.qmd
+    - hw/L03phacking.qmd
+    - hw/L04RNA-seq-data.qmd
+    - hw/L05COVID.qmd
+    - hw/L06Antibiotics-under-our-feet.qmd
+    - hw/L07HWE.qmd
 
 format:
   html:
