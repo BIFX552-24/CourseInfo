@@ -1,0 +1,539 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BIFX 552 - Bioinformatics Data Skills",
+    "section": "",
+    "text": "Welcome to BIFX 552 - Bioinformatics Data Skills",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>CourseInfo</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#syllabus",
+    "href": "index.html#syllabus",
+    "title": "BIFX 552 - Bioinformatics Data Skills",
+    "section": "Syllabus",
+    "text": "Syllabus\n\nCourse Description\nThis class provides an introduction to applied data science skills needed by bioinformatics professionals. A focus will be placed on reproducible bioinformatics research and will include the following topics and tools: beginning to intermediate use of the Unix command line, working with remote computing resources, version tracking, R and Bioconductor, tools for manipulating sequence data, and creation of pipelines.\n\nInstructor: Randall Johnson, PhD\nOffice hours: Office hours will be held immediately before and after in-person meetings. Email me to schedule a virtual office hour at another time.\nPrerequisites: BIFX 503\nTextbooks: We will not be using a textbook this term, but you may find the following helpful. All are freely available online.\n\nR for Data Science\nAdvanced R\nR Packages\n\nCommunications: Course communications will be posted on Blackboard.\nCode of Conduct: We want to foster a safe, enjoyable and productive learning environment. People like you add value to our program. To meet this end, all participants will be expected to follow the course code of conduct located in the course documents on Blackboard.\nGradCare: Graduate school can be stressful. Hood College is here to help. We offer a wide range of support services for graduate students. Our programs and resources address the eight dimensions of wellness—emotional, physical, social, intellectual, spiritual, occupational, financial and environmental—so you can stay healthy while maintaining school-work-life balance.\nAccessibility: As the instructor of this course, I endeavor to provide an inclusive learning environment. However, if you experience barriers to learning in this course, do not hesitate to discuss them with me and the Office for Accessibility Services, 301-696-3421, gmuer@hood.edu.\n\n\n\nLearning Objectives\nOn completion of this course, students should be comfortable with the following:\n\nUse of R and Bioconductor to perform bioinformatic analysis tasks\nUse of the Unix command line to manipulate data and perform bioinformatic analysis tasks\nLogging into and using remote computing resources\nWorking with version controlled code repositories in a collaborative work environment\nStitching a series of commands and/or programs together into a reusable pipeline\n\n\n\nAsynchronous and In-Person Content\nAsynchronous content will be posted weekly, and in-person labs will be scheduled on Tuesday evenings throughout the term at 5:30 PM (see the schedule below). If you need to attend a particular class virtually (e.g. while on travel), in-person labs can be streamed. Course content will be based on up-to-date, publicly available material from experts in the Data Carpentry, Software Carpentry, and Bioconductor communities.\n\n\nHomework and Course Project\nThere will be homework assignments associated with each course module. This will give you an opportunity to practice what we cover each week. Homework from asynchronous content will be due on Tuesdays and should be completed before each in-person meeting. The last few weeks of the course will be devoted to a group project based on a bioinformatics workflow from Bioconductor.\n\n\nGrading\nGrades will be based on completion of homework, a group project and two exams.\n\nAsynchronous Content - 25%\nIn-person Content - 25%\nBioconductor Project - 10%\nMid-term - 20%\nFinal exam - 20%\n\nLate submissions of any work will be subject to a 5% penalty for each day past the due date. The maximum penalty for late work will be 50%.\n\n\nWeather\nIn the event of severe weather resulting in the closure of Hood College and the cancellation of an in-person meeting, the meeting will be held virtually at the scheduled time and a recording posted on Blackboard for asynchronous viewing.\n\n\nTentative Class Schedule\n\n\n\n\n\nWeek\nDate\nAsynchronous Content\nIn Person Content\n\n\n\n\n1\nAug 20\nGit\nClass intro, Markdown / Quarto\n\n\n2\nAug 27\nR Intro\ngit practice\n\n\n3\nSep 3\nSubsetting Data, R Control Flow\np-Hacking\n\n\n4\nSep 10\nR Graphics, R Vectorization, R Functions\nRNA-Seq Data Viz\n\n\n5\nSep 17\nR Advanced Data\nCanine Confounders\n\n\n6\nSep 24\nJoining Tables, R Software Tips\nAntibiotics Under Our Feet\n\n\n7\nOct 1\nCatch Up\nPopulation Genetics Simulation\n\n\n8\nOct 8\nMidterm\nMidterm Q/A (virtual)\n\n\n9\nOct 15\nFall break\n(no class)\n\n\n10\nOct 22\nUnix\nCommand Line Practice\n\n\n11\nOct 29\nSnakemake\nDocker practice\n\n\n12\nNov 5\nVariant Calling Workflow\nVariant Calling Pipeline\n\n\n13\nNov 12\nAdvanced Snakemake\nVariant Calling Pipeline (cont)\n\n\n14\nNov 19\nIntro to Bioconductor\nBioconductor Project\n\n\n15\nNov 26\nGroup Work\nProject Q/A (in person)\n\n\n16\nDec 3\nGroup Work\nProject Presentations / Final Exam",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>CourseInfo</span>"
+    ]
+  },
+  {
+    "objectID": "labs/01markdown.html",
+    "href": "labs/01markdown.html",
+    "title": "2  Markdown / Quarto",
+    "section": "",
+    "text": "Welcome and Introductions",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "labs/01markdown.html#welcome-and-introductions",
+    "href": "labs/01markdown.html#welcome-and-introductions",
+    "title": "2  Markdown / Quarto",
+    "section": "",
+    "text": "What do you hope to get from this class?\nWhat was the last book that you read?",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "labs/01markdown.html#course-overview",
+    "href": "labs/01markdown.html#course-overview",
+    "title": "2  Markdown / Quarto",
+    "section": "Course Overview",
+    "text": "Course Overview\n\nBlackboard tour\nGitHub tour\nSyllabus\nCode of Conduct",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "labs/01markdown.html#todays-lab",
+    "href": "labs/01markdown.html#todays-lab",
+    "title": "2  Markdown / Quarto",
+    "section": "Today’s lab",
+    "text": "Today’s lab\n\nQuarto tour.\n\nQuarto documentation guide.\nMarkdown basics.\nFormatting code block output.\n\nThe iris dataset.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "labs/01markdown.html#the-iris-dataset",
+    "href": "labs/01markdown.html#the-iris-dataset",
+    "title": "2  Markdown / Quarto",
+    "section": "The iris dataset",
+    "text": "The iris dataset\nWe are going to start with the iris demo from Rpubs.com, and then we’ll go back and make some upgrades to the formatting.\n\nRequired\n\nStart by replicating the information and formatting found at https://rpubs.com/moeransm/intro-iris (export HTML code). Be sure to leave a note attirbuting the original authors.\nSet up a repository using this GitHub Classroom link and push your code and html output to GitHub.\n\n\n\nConfigure your repository to publish your webpage using GitHub Pages.\n\n\n\nConfigure your repository to publish your webpage using GitHub Pages.\n\nOn step 6, select “/(root)” to publish your html code from the root directory.\n\n\n\nExport your document in Word format and submit it on Blackboard.\n\n\n\nOptional\n\nSet up GitHub pages on your repository.\nNow make it so that the user can opt for dark mode.\nTurn the paragraph starting “The summary() function gives summary statistics for any dataset.” into at tip using a callout block.\nFold the code in the visualization section, such that only the figures are shown by default.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "labs/02git.html",
+    "href": "labs/02git.html",
+    "title": "3  git practice",
+    "section": "",
+    "text": "Today’s Lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/02git.html#todays-lab",
+    "href": "labs/02git.html#todays-lab",
+    "title": "3  git practice",
+    "section": "",
+    "text": "Practice git commands at Learn Git Branching\n\n\nBioinformatics tools survey: a collaborative exercise using git\n\nYou’ll need a GitHub account and git. I recommend installing Sourcetree or something similar.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/02git.html#learn-git-branching",
+    "href": "labs/02git.html#learn-git-branching",
+    "title": "3  git practice",
+    "section": "Learn Git Branching ",
+    "text": "Learn Git Branching \nWork on the following practice modules of Learn Git Branching\n\nIntroduction Sequence\nRamping Up\nMoving Work Around\nA Mixed Bag",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/02git.html#setup-bioinformatics-tools-survey",
+    "href": "labs/02git.html#setup-bioinformatics-tools-survey",
+    "title": "3  git practice",
+    "section": "Setup bioinformatics tools survey ",
+    "text": "Setup bioinformatics tools survey \n\nBreak up into groups of 2 - 4 students and create a bioinformatics tools survey assignment repository together.\n\nThe first student will need to create a group in GitHub classroom (follow the link above).\nSubsequent group members can then join the group on GitHub classroom.\n\n\n\nEveryone clone the group repository to their individual computers.\nEveryone find a few bioinformatics tools and add them to the csv file, tools.csv.\nStage, commit and push your changes to GitHub, dealing with any merge conflicts as a team.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/02git.html#feature-branching",
+    "href": "labs/02git.html#feature-branching",
+    "title": "3  git practice",
+    "section": "Feature branching ",
+    "text": "Feature branching \n\nEveryone pick a different piece of information to add to the chart.\n\nDocumentation (add a link to the documentation - eg Genome Analysis Toolkit)\nTechnology (type or source of data)\nOS (operating systems it will run on)\nCost (license cost)\n\n\n\nEveryone create a new branch for your feature and check it out.\nUpdate tools.csv with the information for your feature.\nStage, commit and push your branch to GitHub.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/02git.html#collaboration-and-integration",
+    "href": "labs/02git.html#collaboration-and-integration",
+    "title": "3  git practice",
+    "section": "Collaboration and integration ",
+    "text": "Collaboration and integration \n\nSwitch back to the master branch.\nEveryone pick a feature branch that you didn’t create and pull remote changes.\nMerge the changes from the feature branch you just pulled into main.\nPush your changes to GitHub, dealing with conflicts as a team.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html",
+    "href": "labs/03phacking.html",
+    "title": "4  p-hacking",
+    "section": "",
+    "text": "Today’s lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#todays-lab",
+    "href": "labs/03phacking.html#todays-lab",
+    "title": "4  p-hacking",
+    "section": "",
+    "text": "What is p-hacking?\nTrain your p-hacking skills!",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#what-is-p-hacking",
+    "href": "labs/03phacking.html#what-is-p-hacking",
+    "title": "4  p-hacking",
+    "section": "What is p-hacking?",
+    "text": "What is p-hacking?\nP-hacking is the introduction of bias into a study or experiment that increases the likelihood of small p-values independent of any “real” correlation between the measured variables and the outcome of interest.\nDid you know that the per capita cheese consumption correlates with the number of people who died by becoming tangled in their bed sheets between 1999 and 2009?\n\nDid you know that the total revenue generated by arcades correlates with the number of computer science doctorates awarded in the US between 1999 and 2009?\n\nYou can check out these and many other “interesting” results on Tyler Vigen’s website, Spurious correlations.\nThese facts are intriguing until you look a little closer into how he discovered these factoids. He basically took every statistic he could find between 1999 and 2009, from death rates, to consumer trends, to spending, and compared them all with each other. He has found some really entertaining bogus correlations.\nWhen it comes down to it, if you really want to make a case with data, you can hack your way to a story without too much work. Let’s say we want to tell a story about what makes a great data scientist.\n\nLet’s start by sending out a survey to all of our data scientist friends, asking:\n\nFavorite color\nShoe size\nHair color\nWedding ring size\nNumber of milkshakes eaten each month\nDistance to the nearest Walmart\n\nWe’ll walk up and down Carroll Creek, asking “random” passersby to respond to the same survey.\nIf we don’t find any “significant” correlations, we’ll simply come up with some additional questions until we find something that stands out.\n\nIt will not take long for us to find a story - perhaps we’ll discover that drinking as few as three extra beers during each full moon will make us better data scientists!",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#p-hacking-practice",
+    "href": "labs/03phacking.html#p-hacking-practice",
+    "title": "4  p-hacking",
+    "section": "P-hacking practice",
+    "text": "P-hacking practice\nFor this part of the lab, we will be using the p-hacker app developed by Felix Schönbrodt.\n\nStart by picking experimental and control groups. For my research, I’d like to find out what makes people good at data science!\n\nExperimental group: Data scientists\nControl group: Random pedestrian walking down Carroll Creek.\n\nWe’ll use defaults for the rest of the options. Can you find a random seed that results in something publishable? (For the purposes of this lab, we’ll say that anything with a p-value less than 0.05 is publishable.)\n\n\n\n\n\n\n\nRandom seed 1521\n\n\n\n\n\n\nDV1 looks pretty good, except there is a pesky outlier at the bottom of the random pedestrian group. Let’s drop it, because it looks suspicious.\nWe have acheived significance!\nTime to publish.\n\n\n\n\n\nTry some other options and see what interesting results you can come up with.\n\nIncreasing the number of variables (Number of DV's) will increase your chances of finding something “interesting”.\nA smaller sample size is usually more prone to false positive findings, but try adding a few participants at a time until you get something significant.\nControlling for different variables (socioeconomic status, age, gender, …) might help. If it does, great! If not, you can skip that part.\n\n\n\n\n\n\n\n\nRandom seed 827346\n\n\n\n\n\n\nNumber of DV’s 10\nAdd 5 new participants.\nDV3 looks pretty good!\n\n\n\n\n\n\n\n\n\n\nWhat not to do\n\n\n\nThese are great examples of how not to run a study. While these ideas look pretty egregious, it is surprisingly easy to p-hack. Keeping a watchful eye out for p-hacking will save you grief and wasted time!",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#magic-coin",
+    "href": "labs/03phacking.html#magic-coin",
+    "title": "4  p-hacking",
+    "section": "Magic Coin",
+    "text": "Magic Coin\nI have a magic coin. Every time I flip the coin, I get a heads!\n\n# 1 = Heads, 0 = Tails\nrbinom(10, 1, 0.5)\n\n [1] 1 1 1 1 1 1 1 1 1 1\n\n\nDon’t believe that it always gives me heads? Let’s try that again:\n\n# 1 = Heads, 0 = Tails\nrbinom(10, 1, 0.5)\n\n [1] 1 1 1 1 1 1 1 1 1 1\n\n\nOK, if you check the code behind this page, you’ll see that I used a very special random seed. It will actually generate 29 heads in a row. The probability of that is approximately 1.9^{-9}, but it doesn’t take much work to find one of those special random seeds if you are patient.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#challenge",
+    "href": "labs/03phacking.html#challenge",
+    "title": "4  p-hacking",
+    "section": "Challenge",
+    "text": "Challenge\nFind a random seed that results in 10 heads in a row when executing the following code:\n# your seed\nseed &lt;- 1234\n\nset.seed(seed)\n\nrbinom(10, 1, 0.5)\n[1] 1 1 1 1 1 1 1 1 1 1\nThis is a fairly trivial task, but trying out one seed at a time until you find one that works is going to be tedious.\nLet’s start by picking out a thousand seeds to try:\n\nset.seed(29384)\nseeds &lt;- runif(1e3, 0, .Machine$integer.max) |&gt;\n  as.integer() |&gt;\n  unique()\n\nAs we automatically test out these seeds, we will want to keep track of which seeds are the best.\n\nbestseed &lt;- 0\nmaxHeads &lt;- 0\n\nThis function will test the number of heads we get in a row for the given seed.\n\ncount_heads &lt;- function(seed)\n{\n  set.seed(seed)\n\n  # flip 100 \"coins\"\n  heads &lt;- rbinom(100, 1, 0.5) |&gt;\n    cumsum() \n\n  # see how many heads we get in a row after setting the seed\n  which(heads[-1] == heads[-100]) |&gt;\n    min()\n}\n\nLoop over all seeds and see which one gives us the best result.\n\nfor(i in seeds)\n{\n  nheads &lt;- count_heads(i)\n\n  # if nheads &gt; maxHeads, we have a new winner\n  if(nheads &gt; maxHeads)\n  {\n    maxHeads &lt;- nheads\n    bestseed &lt;- i\n  }\n}\n\nResult: Setting the seed to 2093382261 will result in 9 “heads” in a row. Need to keep looking.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#advanced-challenge",
+    "href": "labs/03phacking.html#advanced-challenge",
+    "title": "4  p-hacking",
+    "section": "Advanced challenge",
+    "text": "Advanced challenge\nCreate a magic coin shiny app that will allow you to identify a seed that will result in an arbitrary number of heads. I’ve given you starter code here.\n\nClone your fork to your local machine.\nComplete the app.\nPush your completed app to GitHub.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/03phacking.html#bonus-challenge",
+    "href": "labs/03phacking.html#bonus-challenge",
+    "title": "4  p-hacking",
+    "section": "Bonus challenge",
+    "text": "Bonus challenge\nFind a seed that results in more than 29 heads in a row.\n\nBounty: you may skip one assignment of your choice.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+    ]
+  },
+  {
+    "objectID": "labs/04RNA-seq-data.html",
+    "href": "labs/04RNA-seq-data.html",
+    "title": "5  RNA-Seq Data",
+    "section": "",
+    "text": "Today’s Lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+    ]
+  },
+  {
+    "objectID": "labs/04RNA-seq-data.html#todays-lab",
+    "href": "labs/04RNA-seq-data.html#todays-lab",
+    "title": "5  RNA-Seq Data",
+    "section": "",
+    "text": "RNA-Seq data visualization - this lab borrows heavily from a Carpentries incubator module on visualization.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+    ]
+  },
+  {
+    "objectID": "labs/04RNA-seq-data.html#rna-seq-data",
+    "href": "labs/04RNA-seq-data.html#rna-seq-data",
+    "title": "5  RNA-Seq Data",
+    "section": "RNA-Seq data",
+    "text": "RNA-Seq data\nTo start out with, fork the starter code and clone the repository to your local machine. Once we have done that, let’s explore the data provided:\n\n\n# A tibble: 32,428 × 20\n   gene    sample  expression organism   age sex   infection strain  time tissue\n   &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt; \n 1 Asl     GSM254…       1170 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 2 Apod    GSM254…      36194 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 3 Cyp2d22 GSM254…       4060 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 4 Klk6    GSM254…        287 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 5 Fcrls   GSM254…         85 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 6 Slc2a4  GSM254…        782 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 7 Exd2    GSM254…       1619 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 8 Gjc2    GSM254…        288 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 9 Plp1    GSM254…      43217 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n10 Gnb4    GSM254…       1071 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n# ℹ 32,418 more rows\n# ℹ 10 more variables: mouse &lt;dbl&gt;, ENTREZID &lt;dbl&gt;, product &lt;chr&gt;,\n#   ensembl_gene_id &lt;chr&gt;, external_synonym &lt;chr&gt;, chromosome_name &lt;chr&gt;,\n#   gene_biotype &lt;chr&gt;, phenotype_description &lt;chr&gt;,\n#   hsapiens_homolog_associated_gene_name &lt;chr&gt;, l2exp &lt;dbl&gt;\n\n\nTake a look at the distribution of the expression levels:\n\n\n\n\n\n\n\n\n\nYou’ll probably notice an automatic message that appears when drawing the histogram: stat_bin() using bins = 30. Pick better value with binwidth. Change the bins or binwidth arguments of geom_histogram() to change the number or width of the bins.\nThe data should be transformed. Transforming on the \\(\\log_{10}\\) scale is easy in ggplot2,\n\n\n\n\n\n\n\n\n\nbut we often use a \\(log_2\\) scale when looking at expression data:",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+    ]
+  },
+  {
+    "objectID": "labs/04RNA-seq-data.html#building-plots-iteratively",
+    "href": "labs/04RNA-seq-data.html#building-plots-iteratively",
+    "title": "5  RNA-Seq Data",
+    "section": "Building plots iteratively",
+    "text": "Building plots iteratively\nWe will now draw a scatter plot with two continuous variables and the geom_point() function. This graph will represent the \\(\\log_2\\) fold changes of expression comparing time 8 versus time 0, and time 4 versus time 0. To this end, we first need to compute the means of the log-transformed expression values by gene and time, then the log fold changes by subtracting the mean log expressions between time 8 and time 0 and between time 4 and time 0.\n\n\n\n\n\n\n\n\n\nWe could also add color, but it begins to get a little messy with the large number of categories we have.\n\n\n\n\n\n\n\n\n\nOver-plotting can be an issue with large datasets like this. One solution is using hexbin:geom_hex().",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+    ]
+  },
+  {
+    "objectID": "labs/04RNA-seq-data.html#box-plots",
+    "href": "labs/04RNA-seq-data.html#box-plots",
+    "title": "5  RNA-Seq Data",
+    "section": "Box plots",
+    "text": "Box plots\nWe can use boxplots to visualize the distribution of gene expressions within each sample:\n\n\n\n\n\n\n\n\n\nAdding points to box plots can give us a better understanding of the underlying distributions.\n\n\n\n\n\n\n\n\n\nWe could also use geom_violin to better see the distribution of points. Try coloring the points by time as well.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+    ]
+  },
+  {
+    "objectID": "labs/04RNA-seq-data.html#line-plots",
+    "href": "labs/04RNA-seq-data.html#line-plots",
+    "title": "5  RNA-Seq Data",
+    "section": "Line plots",
+    "text": "Line plots\nLet’s calculate the mean expression per duration of the infection for the 10 genes having the highest log fold changes comparing time 8 versus time 0. We can do this either by coloring each gene or using facet_wrap.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNow we would like to split the line in each plot by the sex of the mice.\n\n\n\n\n\n\n\n\n\nLet’s do something similar and create a plot that depicts how the average expression of each chromosome changes through the duration of infection.\n\n\n\n\n\n\n\n\n\nThe facet_wrap geometry extracts plots into an arbitrary number of dimensions to allow them to cleanly fit on one page. On the other hand, the facet_grid geometry allows you to explicitly specify how you want your plots to be arranged via formula notation (rows ~ columns; a . can be used as a placeholder that indicates only one row or column).\nLet’s modify the previous plot to compare how the mean gene expression of males and females has changed through time:",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html",
+    "href": "labs/05COVID.html",
+    "title": "6  Canine Confounders",
+    "section": "",
+    "text": "Today’s lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html#todays-lab",
+    "href": "labs/05COVID.html#todays-lab",
+    "title": "6  Canine Confounders",
+    "section": "",
+    "text": "Review of Canine Confounders\nPractice visualization using ggplot2",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html#canine-confounders",
+    "href": "labs/05COVID.html#canine-confounders",
+    "title": "6  Canine Confounders",
+    "section": "Canine confounders",
+    "text": "Canine confounders\nWe’ll be using a COVID-19 dataset from Mexico City that was featured in an article in Significance Magazine titled Canine Confounders (Núñez 2022).\nWhat is presented here is intentionally rough and open ended. After filling in the missing details in the starter code, what other questions might you have? What other tests and/or visualizations might be interesting?\nLet’s start by looking at the primary effects of different risk factors and confounders on mortality.\n\n\n\n\n\nfactor\nOR\np_OR\nHR\np_HR\n\n\n\n\nAntivirals\n1.15\n0.01179\n1.15\n0.00108901\n\n\nDiabetes\n1.60\n&lt; 2.22e-16\n1.48\n&lt; 2.22e-16\n\n\nHyptertension\n1.80\n&lt; 2.22e-16\n1.61\n&lt; 2.22e-16\n\n\nObesity\n1.38\n&lt; 2.22e-16\n1.21\n5.1218e-15\n\n\nAge &gt; 65\n2.74\n&lt; 2.22e-16\n2.33\n&lt; 2.22e-16\n\n\nSex (male)\n1.39\n&lt; 2.22e-16\n1.27\n&lt; 2.22e-16\n\n\nPrivate Sector\n0.40\n&lt; 2.22e-16\n0.28\n&lt; 2.22e-16\n\n\nDog ownership\n1.51\n4.1337e-08\n1.25\n0.00090071",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html#covid-survival",
+    "href": "labs/05COVID.html#covid-survival",
+    "title": "6  Canine Confounders",
+    "section": "COVID Survival",
+    "text": "COVID Survival\nHere are Kaplan-Meier plots for our risk factors and confounders.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html#missingness",
+    "href": "labs/05COVID.html#missingness",
+    "title": "6  Canine Confounders",
+    "section": "Missingness",
+    "text": "Missingness\nLets take a look at the missing rate of dog ownership by the hospital they were admitted to.\n\n\n\n\n\n\nMissing\nFALSE\nTRUE\n\n\n\n\nCRUZ ROJA\n6\n0\n0\n\n\nESTATAL\n23\n12\n0\n\n\nIMSS\n16306\n1\n1\n\n\nIMSS-OPORTUNIDADES\n1\n0\n0\n\n\nISSSTE\n2077\n1495\n363\n\n\nPEMEX\n465\n263\n1\n\n\nPRIVADA\n796\n614\n84\n\n\nSEDENA\n608\n277\n17\n\n\nSEMAR\n16\n1\n1\n\n\nSSA\n5580\n2463\n440\n\n\nUNIVERSITARIO\n1\n0\n0\n\n\n\n\n\nAfter removing a few sectors that don’t have much data, let’s look at this graphically over time.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html#dog-ownership-and-missingness-by-sector-bias",
+    "href": "labs/05COVID.html#dog-ownership-and-missingness-by-sector-bias",
+    "title": "6  Canine Confounders",
+    "section": "Dog ownership and missingness by sector: Bias",
+    "text": "Dog ownership and missingness by sector: Bias\nHow does the risk of death change by sector, compared to the private sector?\n\n\n\nCall:\nglm(formula = death_intubation ~ sector, family = binomial, data = .)\n\nCoefficients:\n             Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)  -1.38128    0.06458 -21.388  &lt; 2e-16 ***\nsectorSSA     0.73377    0.06851  10.710  &lt; 2e-16 ***\nsectorIMSS    1.15267    0.06648  17.339  &lt; 2e-16 ***\nsectorISSSTE  0.36665    0.07397   4.956 7.18e-07 ***\nsectorPEMEX   0.85653    0.10022   8.546  &lt; 2e-16 ***\nsectorSEDENA  0.62934    0.09624   6.539 6.18e-11 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 42246  on 31849  degrees of freedom\nResidual deviance: 41461  on 31844  degrees of freedom\n  (1 observation deleted due to missingness)\nAIC: 41473\n\nNumber of Fisher Scoring iterations: 4",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/05COVID.html#references",
+    "href": "labs/05COVID.html#references",
+    "title": "6  Canine Confounders",
+    "section": "References",
+    "text": "References\n\n\n\n\nNúñez, Isaac. 2022. “Canine Confounders.” Significance 19 (4): 24–27.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html",
+    "href": "labs/06Antibiotics-under-our-feet.html",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "",
+    "text": "Today’s lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html#todays-lab",
+    "href": "labs/06Antibiotics-under-our-feet.html#todays-lab",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "",
+    "text": "Review of the AUOF dataset\nCean up the dataset\nExploratory data analysis",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html#auof-dataset",
+    "href": "labs/06Antibiotics-under-our-feet.html#auof-dataset",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "AUOF dataset",
+    "text": "AUOF dataset\nThe dataset we will be using comes from a study called Antibiotics Under Our Feet1. It has been shared on figshare.\nThe dataset contains information on microbes found in six soil samples.\n\nTaxonomy\nAssociated diseases\nAntibiotic resistance\nMethod of action of the antibiotics\nWhether the microbe was observed in the soil samples",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html#data-summary",
+    "href": "labs/06Antibiotics-under-our-feet.html#data-summary",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "Data summary",
+    "text": "Data summary\n\n\n\nNumber of microbes with documented antimicrobial resistance that were targetd by this study, grouped by antimicrobial action, and the number of microbes found in study samples.\n\n\nAction\nNumber of Microbes\nObserved\n\n\n\n\nCell wall disruption\n9\n8\n\n\nDNA interactions\n4\n3\n\n\nErgosterol inhibition\n6\n0\n\n\nGlucan inhibition\n15\n0\n\n\nOther\n3\n1\n\n\nPBP\n8\n5\n\n\nPeptidoglycan inhibition\n9\n7\n\n\nTranslation disruption\n7\n4",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html#phyla",
+    "href": "labs/06Antibiotics-under-our-feet.html#phyla",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "Phyla",
+    "text": "Phyla",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html#classes",
+    "href": "labs/06Antibiotics-under-our-feet.html#classes",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "Classes",
+    "text": "Classes",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/06Antibiotics-under-our-feet.html#footnotes",
+    "href": "labs/06Antibiotics-under-our-feet.html#footnotes",
+    "title": "7  Antibiotics Under Our Feet",
+    "section": "",
+    "text": "Gul, Anum; Mackenzie, Dylan; Shahid, Aleena; Tawfeeq, Tawfeeq; Cornwell, Rebecca; Czekster, Clarissa Melo (2023). Antibiotics under our feet: investigating antimicrobial resistance (Scotland). figshare. Dataset. https://doi.org/10.6084/m9.figshare.23770230.v1↩︎",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html",
+    "href": "labs/07HWE.html",
+    "title": "8  Population genetics simulation",
+    "section": "",
+    "text": "Today’s lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#todays-lab",
+    "href": "labs/07HWE.html#todays-lab",
+    "title": "8  Population genetics simulation",
+    "section": "",
+    "text": "Review of Hardy-Weinberg equilibrium\nPopulation genetics simulation",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#hardy-weinberg-equilibrium",
+    "href": "labs/07HWE.html#hardy-weinberg-equilibrium",
+    "title": "8  Population genetics simulation",
+    "section": "Hardy-Weinberg Equilibrium",
+    "text": "Hardy-Weinberg Equilibrium\nHardy-Weinberg equilibrium (HWE) is a principle in population genetics that describes a state of genetic stability in a population. It predicts that, under certain ideal conditions, the frequencies of genotypes are dependent on allele frequencies and will remain constant across generations.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#hwe-assumptions",
+    "href": "labs/07HWE.html#hwe-assumptions",
+    "title": "8  Population genetics simulation",
+    "section": "HWE assumptions",
+    "text": "HWE assumptions\nThe Hardy-Weinberg equilibrium assumes the following:\n\nLarge population size\nRandom mating\nNo mutation\nNo migration\nNo natural selection\n\nIn human populations, these assumptions are rarely met, but the HWE model provides a useful baseline and is actually quite robust in practice.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#hwe-equation",
+    "href": "labs/07HWE.html#hwe-equation",
+    "title": "8  Population genetics simulation",
+    "section": "HWE equation",
+    "text": "HWE equation\nGiven two alleles, A and B, with frequencies \\(p\\) and \\(q\\), respectively, a population in Hardy-Weinberg equilibrium will have the following genotype frequencies:\n\n\\(p^2\\) = frequency of the homozygous dominant genotype (AA)\n\\(2pq\\) = frequency of the heterozygous genotype (AB)\n\\(q^2\\) = frequency of the homozygous recessive genotype (BB)\n\nThe Hardy-Weinberg equation can be derived from looking at all possible matings. For example for two heterozygous parents, the probability of each genotype in the offspring is as follows:\n\n\n\n\n\n\nA\nB\n\n\n\n\nA\nP(AA) = 0.25\nP(AB) = 0.25\n\n\nB\nP(AB) = 0.25\nP(BB) = 0.25\n\n\n\n\n\nWhen you sum the probabilities of each genotype, conditional on the frequency of parent genotypes in the population,\n\\[\n\\sum P(genotype_{f1} | genotype_{f0}) = 1,\n\\]\nyou get the Hardy-Weinberg equation:\n\\[\np^2 + 2pq + q^2 = 1\n\\]",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#population-genetics-simulation",
+    "href": "labs/07HWE.html#population-genetics-simulation",
+    "title": "8  Population genetics simulation",
+    "section": "Population genetics simulation",
+    "text": "Population genetics simulation\nWe will use a simulation to explore Hardy-Weinberg equilibrium. To this end, we need to define the following data structures and functions:\n\n#' gen\n#' A generation of individuals\n#' @format A list with the following fields:\n#' @field genos A vector of genotypes, one for each individual in the \n#'   population, with 0, 1, and 2 representing genotypes AA, AB, and BB\n#' @field p The observed frequency of allele A\n#' @field q The observed frequency of allele B\n#' @field pAA The observed frequency of genotype AA\n#' @field pAB The observed frequency of genotype AB\n#' @field pBB The observed frequency of genotype BB\n\n#' gen_list\n#' A list of generations\n#' @format A list of `gen` objects, one for each successive generation\n\n\n#' gen0\n#' Generate the initial population\n#' @param n Number of individuals\n#' @param p Frequency of allele A (frequency of B is assumed to be 1 - p)\n#' @return A `gen_list` object of length 1 containing the initial generation\n\n\n#' next_gen\n#' Generate the next generation\n#' @param gen_prev A `gen_list` object containing previous generations (at\n#'   least one)\n#' @param n Number of individuals to simulate in the next generation\n#' @param p Frequency of allele A (frequency of B is assumed to be 1 - p)\n#' @details Individuals of the most recent generation will be randomly \n#'   sorted and paired to generate the next generation. Offspring will be\n#'   generated by randomly selecting a pair of parents, generating a single\n#'   offspring, and repeating this process until the desired number of\n#'   offspring is reached.\n#' @return A `gen_list` object of length `length(gen_prev) + 1` including \n#'   `gen_prev` and the newly simulated generation.\n\n\n#' plot_gen_list\n#' Plot the allele and genotype frequencies of a `gen_list` object\n#' @param gen_list A `gen_list` object\n#' @return A ggplot object",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#primary-tasks",
+    "href": "labs/07HWE.html#primary-tasks",
+    "title": "8  Population genetics simulation",
+    "section": "Primary tasks",
+    "text": "Primary tasks\n\nInitialize your group’s repository with the provided template.\n\n\nImplement the functions gen0, next_gen, and plot_gen_list in R.\n\nEach student pick a different function to implement.\nA sample gen_list object is included with the template.\nWork together to test the functions.\n\nCreate a README file using Quarto with documentation:\n\nUse format: \"gfm\" in the YAML header.\nDescribe the use and purpose of the functions.\nProvide examples of how to use the functions.\n\n\n\nCommit and push your changes to the GitHub.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/07HWE.html#secondary-tasks",
+    "href": "labs/07HWE.html#secondary-tasks",
+    "title": "8  Population genetics simulation",
+    "section": "Secondary tasks",
+    "text": "Secondary tasks\n\nAdd the following to your README file (some of these may require changes to your functions):\n\nA brief description of the assumptions of the HWE model.\nA simulation of the consequences of departures from HWE.\n\nEach group will pick a different assumption to simulate.\nComplete as many assumptions as time allows.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  }
+]

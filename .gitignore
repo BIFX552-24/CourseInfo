@@ -1,0 +1,11 @@
+.DS_Store
+
+.quarto/
+.RProj.user/
+*.Rproj
+.Rhistory
+
+*_cache/
+labs/*_files/
+word/
+labs/data/
