@@ -6,3 +6,8 @@ word/
 .Rhistory
 
 /.quarto/
+
+docs/
+labs/*_cache/
+labs/*_files/
+labs/data/sisver_public.csv
