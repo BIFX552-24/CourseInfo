@@ -2,7 +2,6 @@ project:
   output-dir: word
   render:
     - index.qmd
+    - cluster.qmd
 
-format:
-  docx: 
-    output-file: "BIFX552-syllabus.docx"
+format: docx
