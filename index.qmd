@@ -1,5 +1,5 @@
 ---
-title: "CourseInfo"
+title: "Syllabus"
 execute: 
   echo: false
 ---
@@ -57,11 +57,11 @@ On completion of this course, students should be comfortable with the following:
 
 ### Asynchronous and In-Person Content
 
-Asynchronous content will be posted weekly, and in-person labs will be scheduled on Tuesday evenings throughout the term at 5:30 PM (see the schedule below). If you need to attend a particular class virtually (e.g. while on travel), in-person labs can be streamed. Course content will be based on up-to-date, publicly available material from experts in the [Data Carpentry](https://datacarpentry.org/), [Software Carpentry](https://software-carpentry.org/), and [Bioconductor](https://bioconductor.org/) communities.
+Asynchronous content will be posted weekly, and in-person labs will be scheduled on Tuesday evenings throughout the term at 5:30 PM (see the schedule below). If you need to attend a particular class virtually (e.g. while on travel), in-person labs can be streamed. Much of the course content will be based on up-to-date, publicly available material from experts in the [Data Carpentry](https://datacarpentry.org/), [Software Carpentry](https://software-carpentry.org/), and [Bioconductor](https://bioconductor.org/) communities.
 
 ### Homework and Course Project
 
-There will be homework assignments associated with each course module. This will give you an opportunity to practice what we cover each week. Homework from asynchronous content will be due on Tuesdays and should be completed before each in-person meeting. The last few weeks of the course will be devoted to a group project based on a bioinformatics workflow from Bioconductor.
+There will be homework assignments associated with each course module. This will give you an opportunity to practice what we cover each week. Homework from asynchronous content will typically be due on Tuesdays and should be completed before each in-person meeting. The last few weeks of the course will be devoted to a group project based on a bioinformatics workflow from Bioconductor.
 
 ### Grading
 
