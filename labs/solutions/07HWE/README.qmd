@@ -1,0 +1,292 @@
+---
+title: Population Genetics Simulation
+date: "2024-10-01"
+format: gfm
+execute:
+  message: false
+  warning: false
+---
+
+```{r setup}
+#| include: false
+
+source("functions.R")
+
+# This will help the code run faster when running iterations
+if(file.exists('pop_gen_sims.RData'))
+    load('pop_gen_sims.RData')
+```
+
+Hardy-Weinberg equilibrium (HWE) is a principle in population genetics that describes a state of genetic stability in a population. It predicts that, under certain ideal conditions, the frequencies of genotypes are dependent on allele frequencies and will remain constant across generations. This document describes a simple simulation of populations under HWE along with a visualization of the changes in genotype frequencies over time under various scenarios where HWE assumptions are violated. Functions for simulating populations and plotting the results are provided in the `functions.R` file of this repository.
+
+
+## Large population size
+
+The first assumption we will test is the effect of population size on the stability of genotype frequencies. HWE assumes an infinite population size, but in reality, small populations can deviate from HWE due to genetic drift. Depending on the allele frequency, a "small" can be relative, but HWE is generally considered a good approximation for common alleles in populations with more than 100 individuals.
+
+### Population bottleneck
+
+We start testing the sensitivity of this assumption by simulating a small population of 10 individuals with an initial allele frequency of 0.5. The plot below shows the changes in genotype frequencies over 20 generations, with each generation increasing by 50% over the previous generation. The population reaches equilibrium in the first 5 - 10 generations, with genotype frequencies stabilizing under HWE assumptions as the population becomes larger.
+
+```{r}
+#| eval: false
+sim_gens(n = 1.5^(0:19) * 10, 
+         p = 0.5, 
+         nsims = 20) |>
+  plot_allele_by_gen()
+```
+```{r}
+#| echo: false
+if(!exists("pops0")) {
+  set.seed(293847)
+    
+  pops0 <- sim_gens(n = 1.5^(0:19) * 10, 
+                    p = 0.5, 
+                    nsims = 20) |>
+    plot_allele_by_gen()
+}
+
+pops0
+```
+
+When we start with a more rare allele frequency of 0.1, the population takes longer to reach equilibrium, but the final genotype frequencies still stabilize under HWE assumptions.
+
+```{r}
+#| eval: false
+sim_gens(n = 1.5^(0:19) * 10, 
+         p = 0.1, 
+         nsims = 20) |>
+  plot_allele_by_gen()
+```
+```{r}
+#| echo: false
+if(!exists("pops1")) {
+  set.seed(19387)
+    
+  pops1 <- sim_gens(n = 1.5^(0:19) * 10, 
+           p = 0.1, 
+           nsims = 20) |>
+  plot_allele_by_gen()
+}
+
+pops1
+```
+
+
+## Random Mating
+
+The next assumption we will test is the affect of random mating on genotype frequencies. HWE assumes random mating, but in reality, mating is often assortative, meaning individuals are more likely to mate with others who are similar to themselves. This can lead to deviations from HWE, particularly in small populations.
+
+### Assortative mating
+
+To simulate non-random mating, specifically assortative mating, we will use a simple function that sorts the genotypes and pairs individuals based on their genotype. The figure below shows the changes in genotype frequencies over 20 generations with assortative mating and repeat this 20 times. As expected, the genotype frequencies deviate from HWE assumptions, with some genotypes becoming more common than others, with no clear trend towards equilibrium (with the exception of when an allele is lost from a population).
+
+```{r}
+#| eval: false
+pops2 <- sim_gens(n = 1.2^(0:19) * 10,
+                 p = 0.5,
+                 nsims = 20,
+                 mating_fun = assortative_mating) |>
+  plot_allele_by_gen()
+```
+```{r}
+#| echo: false
+if(!exists("pops2")){
+  set.seed(1237896)
+  pops2 <- sim_gens(n = 1.2^(0:19) * 10,
+                   p = 0.5,
+                   nsims = 20,
+                   mating_fun = assortative_mating) |>
+    plot_allele_by_gen()
+}
+
+pops2
+```
+
+
+## No migration
+
+Another assumption of HWE is that there is no migration in or out of the population. Migration can introduce new alleles or change allele frequencies, leading to deviations from HWE.
+
+### Migration into the population
+
+The figure below shows the changes in genotype frequencies over 15 generations with a migration event at 5 generations. We repeat this scenario 20 times. As expected, the genotype frequencies deviate from HWE assumptions between generations 5 and 6, with a new equilibrium reached after the migration event. There is a small amount of genetic drift, but the allele frequency remains fairly stable before and after the migration event.
+
+```{r}
+#| eval: false
+
+# start with 5 generations of constant population size
+pops3 <- sim_gens(n = rep(500, 5),
+                  p = 0.5,
+                  nsims = 20)
+
+# add a migration event, 20% of the population
+for(i in 1:20)
+{
+  add_at <- with(pops3, which(sim == i & generation == 5))
+  pops3$genos[[add_at]] <- c(pops3$genos[[add_at]],
+                             gen0(100, 0.05)$genos[[1]]) # migration into the population
+}
+
+# continue with remaining 15 generations of constant population size
+pops3 <- sim_gens(n = rep(500, 10),
+                  p = NA,
+                  nsims = 20,
+                  state = pops3)
+
+plot_allele_by_gen(pops3) + 
+  
+  # add a trend line summarizing all populations
+  geom_line(mapping = aes(generation, p),
+            data = group_by(pops3, generation) |> 
+              summarise(p = mean(p)),
+            color = 'blue', linewidth = 1.5)
+```
+```{r}
+#| echo: false
+
+if(!exists("pops3"))
+{
+  set.seed(9238472)
+
+  # start with 5 generations of constant population size
+  pops3 <- sim_gens(n = rep(500, 5),
+                    p = 0.5,
+                    nsims = 20)
+
+  # add a migration event, 20% of the population
+  for(i in 1:20)
+  {
+    add_at <- with(pops3, which(sim == i & generation == 5))
+    pops3$genos[[add_at]] <- c(pops3$genos[[add_at]],
+                               gen0(100, 0.05)$genos[[1]]) # migration into the population
+  }
+
+  # continue with remaining 15 generations of constant population size
+  pops3 <- sim_gens(n = rep(500, 10),
+                    p = NA,
+                    nsims = 20,
+                    state = pops3)
+  
+  pops3 <- plot_allele_by_gen(pops3) + 
+  
+    geom_line(mapping = aes(generation, p),
+              data = group_by(pops3, generation) |> 
+                summarise(p = mean(p)),
+              color = 'blue', linewidth = 1.5)
+}
+
+pops3
+```
+
+
+## No mutation or natural selection
+
+The final HWE assumptions we will address is the absence of mutations and natural selection acting on the population. Natural selection can change allele frequencies, and new alleles can arise through mutation.
+
+### Selection of a new allele
+
+When new advantageous alleles arise through mutation, natural selection can change allele frequencies, leading to deviations from HWE. In this example, we violate both assumptions with the introduction of a new allele that conveys a survival advantage in heterozygotes and a disadvantage in homozygotes. The figure below shows the introduction of a new allele and follows changes in allele frequency over 40 generations. We repeat this scenario 20 times.
+
+As expected, the allele frequencies deviate from HWE assumptions immediately, with a new equilibrium reached 20 -30 generations after the new allele is introduced.
+
+```{r}
+#| eval: false
+
+# monomorphic population
+pops4 <- sim_gens(n = 500, p = 0, nsims = 20)
+
+# now add the new allele (start at 5% frequency)
+for(i in 1:20)
+  pops4$genos[[i]][1:10] <- 1
+
+# continue for 19 generations
+sim_gens(n = rep(500, 39),
+         p = NA,
+         nsims = 20,
+         mating_fun = selection_with_dropout(0.8, 
+                                             c("0" = 1, "1" = 3, "2" = 0.3)),
+         state = pops4) |>
+  plot_allele_by_gen()
+```
+```{r}
+#| echo: false
+
+if(!exists('pops4'))
+{
+  set.seed(293856)
+  # monomorphic population
+  pops4 <- sim_gens(n = 500, p = 0, nsims = 20)
+
+  # now add the new allele (start at 5% frequency)
+  for(i in 1:20)
+    pops4$genos[[i]][1:10] <- 1
+  
+  # continue for 19 generations
+  pops4 <- sim_gens(n = rep(500, 39),
+                    p = NA,
+                    nsims = 20,
+                    mating_fun = selection_with_dropout(0.8, 
+                                                        c("0" = 1, "1" = 3, "2" = 0.3)),
+                    state = pops4) |>
+    plot_allele_by_gen()
+}
+
+pops4
+```
+
+
+### Selection of a new allele with no penalty for homozygotes
+
+If we perform the same scenario but change so that there is no penalty for homozygotes of the new allele, the new allele is well on its way to becoming fixed in the population after 40 generations.
+
+```{r}
+#| eval: false
+
+# monomorphic population
+pops5 <- sim_gens(n = 500, p = 0, nsims = 20)
+
+# now add the new allele (start at 5% frequency)
+for(i in 1:20)
+  pops5$genos[[i]][1:10] <- 1
+
+# continue for 19 generations
+sim_gens(n = rep(500, 39),
+         p = NA,
+         nsims = 20,
+         mating_fun = selection_with_dropout(0.8, 
+                                             c("0" = 1, "1" = 3, "2" = 3)),
+         state = pops5) |>
+  plot_allele_by_gen()
+```
+```{r}
+#| echo: false
+
+if(!exists('pops5'))
+{
+  set.seed(29784365)
+  # monomorphic population
+  pops5 <- sim_gens(n = 500, p = 0, nsims = 20)
+
+  # now add the new allele (start at 5% frequency)
+  for(i in 1:20)
+    pops5$genos[[i]][1:10] <- 1
+  
+  # continue for 19 generations
+  pops5 <- sim_gens(n = rep(500, 39),
+                    p = NA,
+                    nsims = 20,
+                    mating_fun = selection_with_dropout(0.8, 
+                                                        c("0" = 1, "1" = 3, "2" = 3)),
+                    state = pops5) |>
+    plot_allele_by_gen()
+}
+
+pops5
+```
+
+
+```{r wrapup}
+#| include: false
+save(pops0, pops1, pops2, pops3, pops4, pops5, file = 'pop_gen_sims.RData')
+```
