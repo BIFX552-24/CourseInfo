@@ -1,0 +1,25 @@
+---
+title: "Git"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H01git.html" title="Version Control with Git"></iframe>
+
+Due Date: Aug 23 @ end of day
+Points: 10
+Display after: Aug 16 @ 8 AM
+-->
+
+
+## Instructions
+
+Watch [Version Control with Git](YouTube link), follow along with the exercises, and submit a link to your toyPipeline repository from GitHub.
+
+## Grading
+* For full credit
+  * Submit your repository on time.
+  * Your repository should contain:
+    * Multiple commits
+    * At least one conflict
+    * A .gitignore file.

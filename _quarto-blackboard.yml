@@ -11,6 +11,8 @@ project:
     - hw/L08Command-line-practice.qmd
     - hw/L09Docker.qmd
     - hw/L10Variant-calling-pipeline.qmd
+    
+    - hw/H01git.qmd
 
 format:
   html:
