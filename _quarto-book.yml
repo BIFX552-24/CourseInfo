@@ -39,6 +39,16 @@ book:
     - part: Asynchronous Content
       chapters:
         - hw/H01git.qmd
+        - hw/H02Intro-to-R.qmd
+        - hw/H03R-basics.qmd
+        - hw/H04R-programming-graphics.qmd
+        - hw/H05R-advanced-data.qmd
+        - hw/H06R-tables-tips.qmd
+    - part: Exams & Final Project
+      chapters:
+        - hw/E01midterm.qmd
+#        - hw/E02Bioconductor_project.qmd
+#        - hw/E03final.qmd
 
 format: 
   html:

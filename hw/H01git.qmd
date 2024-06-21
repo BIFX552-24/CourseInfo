@@ -6,9 +6,9 @@ title: "Git"
 # insert into Blackboard assignment with:
 <iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H01git.html" title="Version Control with Git"></iframe>
 
-Due Date: Aug 23 @ end of day
+Due Date: Aug 27 @ end of day
 Points: 10
-Display after: Aug 16 @ 8 AM
+Display after: Aug 20 @ 5 PM
 -->
 
 
