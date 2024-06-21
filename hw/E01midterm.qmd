@@ -1,0 +1,55 @@
+---
+title: "Midterm Exam"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/E01midterm.html" title="Midterm Exam"></iframe>
+
+Initial Due Date: Oct 5 @ noon
+Final Due Date: Oct 12 @ end of day
+Points: 10
+Display after: Oct 1 @ 5 PM
+-->
+
+## Instructions
+
+Read all instructions.
+
+This exam is open book, open notes, and open internet, so long as you follow the guidelines in the course [Code of Conduct](https://bifx552-24.github.io/CourseInfo/code_of_conduct.html). You may not share or discuss the exam with anyone other than the instructor.
+
+Start by accepting the [Midterm Exam](insert link) on GitHub Classroom. This will create a private repository for you to work in. You will submit your answers to the questions in this document by committing and pushing your changes to the repository. *Do not* accept pull requests on GitHub. This is how I will provide feedback on your work.
+
+**Initial Due Date:** All work pushed to GitHub by noon on Oct 5 will be reviewed and returned with feedback. You may revise and resubmit your work until the **Final Due Date** of Oct 12 at the end of the day.
+
+Your figures should be identical to those in the accompanying Word document. Additional instructions are provided in comment blocks in the provided starter code. Be sure to address each of these in your responses.
+
+## Grading Rubric
+
+| Deliverable   | Competency                                              | Points     |
+|:--------------|:--------------------------------------------------------|:----------:|
+| Code          |                                                         | 40 (total) |
+|               | Renders without errors                                  | 10         |
+|               | All tasks completed correctly                           | 10         |
+|               | Neatness                                                |  6         |
+|               | Code contains appropriate comments/documentation        |  5         |
+|               | Data wrangling for `insure` contained in setup chunk    |  3         |
+|               | Packages loaded once in the setup chunk                 |  1         |
+|               | Appropriate files pushed to GitHub                      |  5         |
+|               | Proper use of pipes and vectorization                   |  5         |
+| Figures       |                                                         | 30 (total) |
+|               | Variables are properly transformed                      |  7         |
+|               | Proper use of color and point/line types                |  7         |
+|               | Labels are neat and human readable                      |  7         |
+|               | Appropriate figure captions are included                |  7         |
+|               | Use `theme_cowplot()`                                   |  2         |
+| Word Doc      |                                                         | 15 (total) |
+|               | Formatted as a Word Document                            |  5         |
+|               | Code not shown in Word document                         |  5         |
+|               | yaml header is updated properly                         |  5         |
+| Understanding |                                                         | 15 (total) |
+|               | Chosen transformation                                   |  5         |
+|               | Written figure analysis                                 |  5         |
+|               | Conclusions                                             |  5         |
+
+Late exams will be subject to a 5% penalty per day after the due date, not to exceed 50%.
