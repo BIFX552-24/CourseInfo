@@ -4,6 +4,7 @@
 .RProj.user/
 *.Rproj
 .Rhistory
+*.RData
 
 *_cache/
 labs/*_files/
