@@ -18,11 +18,11 @@ Read all instructions.
 
 This exam is open book, open notes, and open internet, so long as you follow the guidelines in the course [Code of Conduct](https://bifx552-24.github.io/CourseInfo/code_of_conduct.html). You may not share or discuss the exam with anyone other than the instructor.
 
-Start by accepting the [Midterm Exam](insert link) on GitHub Classroom. This will create a private repository for you to work in. You will submit your answers to the questions in this document by committing and pushing your changes to the repository. *Do not* accept pull requests on GitHub. This is how I will provide feedback on your work.
+Start by accepting the [Midterm Exam](https://classroom.github.com/a/-utEpSp9) on GitHub Classroom. This will create a private repository for you to work in, including some starter code and a partial sample output. You will submit your code and answers to the questions by committing and pushing your changes to the repository. *Do not* accept pull requests on GitHub. This is how I will provide feedback on your work.
 
 **Initial Due Date:** All work pushed to GitHub by noon on Oct 5 will be reviewed and returned with feedback. You may revise and resubmit your work until the **Final Due Date** of Oct 12 at the end of the day.
 
-Your figures should be identical to those in the accompanying Word document. Additional instructions are provided in comment blocks in the provided starter code. Be sure to address each of these in your responses.
+Your figures should be identical to those in the partial sample Word document, except in cases where you decide to use a different transformation. Additional instructions are provided in comment blocks in the provided starter code. Be sure to address each of these in your responses.
 
 ## Grading Rubric
 
@@ -30,10 +30,11 @@ Your figures should be identical to those in the accompanying Word document. Add
 |:--------------|:--------------------------------------------------------|:----------:|
 | Code          |                                                         | 40 (total) |
 |               | Renders without errors                                  | 10         |
-|               | All tasks completed correctly                           | 10         |
+|               | All tasks completed correctly                           |  6         |
 |               | Neatness                                                |  6         |
 |               | Code contains appropriate comments/documentation        |  5         |
-|               | Data wrangling for `insure` contained in setup chunk    |  3         |
+|               | Code chunks include appropriate flags                   |  4         |
+|               | Data wrangling contained in setup chunk                 |  3         |
 |               | Packages loaded once in the setup chunk                 |  1         |
 |               | Appropriate files pushed to GitHub                      |  5         |
 |               | Proper use of pipes and vectorization                   |  5         |
@@ -48,8 +49,8 @@ Your figures should be identical to those in the accompanying Word document. Add
 |               | Code not shown in Word document                         |  5         |
 |               | yaml header is updated properly                         |  5         |
 | Understanding |                                                         | 15 (total) |
-|               | Chosen transformation                                   |  5         |
-|               | Written figure analysis                                 |  5         |
+|               | Chosen transformation(s)                                |  5         |
+|               | Written analysis                                        |  5         |
 |               | Conclusions                                             |  5         |
 
 Late exams will be subject to a 5% penalty per day after the due date, not to exceed 50%.
