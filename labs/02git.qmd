@@ -1,8 +1,16 @@
 ---
-title: "git practice"
+title: "Bioinformatics Tools Survey"
 date: "2024-08-27"
 margin-footer: "[Slides](/standalone/labs/02git.html), [Assignment](/standalone/hw/L02git.html)"
 ---
+
+<!-- 
+GitHub Classroom:
+  - No starter code -> empty repository when accepting the assignment
+  - Group Assignment
+  - Private
+  - Grant admin access
+-->
 
 ## Today's Lab
 
@@ -32,10 +40,10 @@ Work on the following practice modules of [Learn Git Branching](https://learngit
 ## Setup bioinformatics tools survey <!-- 15 minutes -->
 
 :::{.content-visible when-profile="slides"}
-- Break up into groups of 2 - 4 students and create a [bioinformatics tools survey](need link) assignment repository together.
+- Break up into groups of 2 - 4 students and create a [bioinformatics tools survey](https://classroom.github.com/a/JfpqzOLZ) assignment repository together.
 :::
 :::{.content-visible when-profile="book"}
-- Break up into groups of 2 - 4 students and create a [bioinformatics tools survey](need link) assignment repository together.
+- Break up into groups of 2 - 4 students and create a [bioinformatics tools survey](https://classroom.github.com/a/JfpqzOLZ) assignment repository together.
   - The first student will need to create a group in GitHub classroom (follow the link above).
   - Subsequent group members can then join the group on GitHub classroom.
 :::

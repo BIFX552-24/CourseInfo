@@ -6,6 +6,13 @@ execute:
 margin-footer: "[Slides](/standalone/labs/03phacking.html), [Assignment](/standalone/hw/L03phacking.html)"
 ---
 
+<!-- 
+GitHub Classroom:
+  - No starter code: https://github.com/BIFX552-24/magic_coin
+  - Individual Assignment
+  - Private
+-->
+
 ## Today's lab
 
 -   What is p-hacking?
@@ -220,7 +227,7 @@ Result: Setting the seed to `r bestseed` will result in `r maxHeads` "heads" in 
 
 ## Advanced challenge
 
-Create a magic coin shiny app that will allow you to identify a seed that will result in an arbitrary number of heads. I've given you starter code [here](https://classroom.github.com/a/NpOj4BJz).
+Create a magic coin shiny app that will allow you to identify a seed that will result in an arbitrary number of heads. I've given you starter code [here](https://classroom.github.com/a/gUoaaayl).
 
 -   Clone your fork to your local machine.
 

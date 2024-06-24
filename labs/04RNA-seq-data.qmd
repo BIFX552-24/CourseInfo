@@ -6,6 +6,14 @@ execute:
 margin-footer: "[Slides](/standalone/labs/04RNA-seq-data.html), [Assignment](/standalone/hw/L04RNA-seq-data.html)"
 ---
 
+<!-- 
+GitHub Classroom:
+  - Starter code: https://github.com/BIFX552-24/RNA-seq-data
+  - Individual Assignment
+  - Private
+  - Grant admin access
+-->
+
 ```{r}
 #| inclue: false
 #| message: false
@@ -38,7 +46,7 @@ dat <- read_csv('data/rnaseq.csv') %>%
 
 ## RNA-Seq data
 
-To start out with, fork the [starter code](https://classroom.github.com/a/Yz2GMIqU) and clone the repository to your local machine. Once we have done that, let's explore the data provided:
+To start out with, fork the [starter code](https://classroom.github.com/a/LR3UglX5) and clone the repository to your local machine. Once we have done that, let's explore the data provided:
 
 ```{r}
 dat

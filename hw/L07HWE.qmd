@@ -18,6 +18,7 @@ Complete the [Population Genetics Simulation](/labs/07HWE.html) assignment by fo
 ## Grading
 
 For full credit:
+
   * You should have at least one commit from each person in your group.
   * Your repository should contain the files `README.md` and `README.qmd`.
   * The README should contain documentation on the use and purpose of the functions and at lease one simulation of the consequences of a departure from HWE.

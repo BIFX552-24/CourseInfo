@@ -6,17 +6,14 @@ margin-footer: "[Slides](/standalone/labs/10Variant-calling-pipeline.html), [Ass
 
 ## Today's Lab
 
-<!--
-## GitHub Classroom Setup
-
-Repository should have the following empty files:
-
-* Snakefile
-* .gitignore
-* README.md
+<!-- 
+GitHub Classroom:
+  - Starter code: https://github.com/BIFX552-24/Variant-Calling-Pipeline/
+  - Individual Assignment
+  - Private
 -->
 
-During the next two classes we will create a snakemake pipeline following the workflow outlined in the [Variant Calling Workflow](https://datacarpentry.org/wrangling-genomics/) lesson from this week.
+During the next two classes we will create a Snakemake pipeline following the workflow outlined in the [Variant Calling Workflow](https://datacarpentry.org/wrangling-genomics/) lesson from this week. Start with [this empty repository](https://classroom.github.com/a/L7IUdSFx).
 
 ## Setup
 

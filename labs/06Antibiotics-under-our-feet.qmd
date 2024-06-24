@@ -4,15 +4,24 @@ date: "2024-09-24"
 margin-footer: "[Slides](/standalone/labs/06Antibiotics-under-our-feet.html), [Assignment](/standalone/hw/L06Antibiotics-under-our-feet.html)"
 ---
 
+<!-- 
+GitHub Classroom:
+  - Starter code: https://github.com/BIFX552-24/Antibiotics-under-our-feet
+  - Individual Assignment
+  - Private
+  - Grant admin access
+-->
+
+
 ## Today's lab
 
 - Review of the AUOF dataset
-- Cean up the dataset
+- Clean up the dataset
 - Exploratory data analysis
 
 ## AUOF dataset
 
-The dataset we will be using comes from a study called Antibiotics Under Our Feet[^1]. It has been [shared on figshare](https://figshare.com/articles/dataset/Antibiotics_under_our_feet_investigating_antimicrobial_resistance_Scotland_/23770230).
+The dataset we will be using comes from a study called Antibiotics Under Our Feet[^1]. It has been [shared on figshare](https://figshare.com/articles/dataset/Antibiotics_under_our_feet_investigating_antimicrobial_resistance_Scotland_/23770230). Starter code can be accessed [here](https://classroom.github.com/a/mLqwDztl)
 
 The dataset contains information on microbes found in six soil samples.
 

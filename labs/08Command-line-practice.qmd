@@ -4,6 +4,11 @@ date: "2024-10-22"
 margin-footer: "[Slides](/standalone/labs/08Command-line-practice.html), [Assignment](/standalone/hw/L08Command-line-practice.html)"
 ---
 
+<!-- 
+GitHub Classroom:
+  - no assignment on GitHub Classroom for this one.
+-->
+
 ## Today's lab
   
 - Practice command line skills needed develop code on multiple computers / locations, including:

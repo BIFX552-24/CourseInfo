@@ -6,6 +6,15 @@ execute:
 margin-footer: "[Slides](/standalone/labs/07HWE.html), [Assignment](/standalone/hw/L07HWE.html)"
 ---
 
+<!-- 
+GitHub Classroom:
+  - Starter code: https://github.com/BIFX552-24/HWE
+  - Group Assignment
+  - Private
+  - Notes: be sure to copy solutions branch when setting up my copy
+-->
+
+
 ## Today's lab
 
 - Review of Hardy-Weinberg equilibrium
@@ -165,7 +174,7 @@ We will use a simulation to explore Hardy-Weinberg equilibrium. To this end, we 
 
 ## Primary tasks
 
-* Initialize your group's repository with the provided [template](need link).
+* Initialize your group's repository with the provided [template](https://classroom.github.com/a/w4oIFw_8).
 
 :::{.content-visible when-profile="slides"}
 * Implement the functions `gen0`, `next_gen`, and `plot_gen_list` in R.

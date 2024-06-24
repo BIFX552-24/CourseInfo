@@ -9,6 +9,7 @@ title: "Markdown / Quarto Lab"
 Due Date: Aug 20 @ end of day
 Points: 10
 Display after: Aug 20 @ 5 PM
+Individual assignment
 -->
 
 ## Instructions
