@@ -1,0 +1,22 @@
+---
+title: "Unix Shell"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H07Unix.html" title="Unix Shell"></iframe>
+
+Due Date: Oct 22 @ end of day
+Points: 10
+Display after: Oct 15 @ 5 PM
+-->
+
+
+## Instructions
+
+Complete and submit the [Unix Shell](insert link) module. No need to submit anything here.
+
+## Grading
+* For full credit
+  * Complete the tutorial on time
+  * Answer all questions correctly

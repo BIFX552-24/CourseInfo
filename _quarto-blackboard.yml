@@ -16,7 +16,8 @@ project:
     - hw/H03R-basics.qmd
     - hw/H04R-programming-graphics.qmd
     - hw/H05R-advanced-data.qmd
-    - hw/h06R-tables-tips.qmd
+    - hw/H06R-tables-tips.qmd
+    - hw/H07Unix.qmd
     - hw/E01midterm.qmd
 
 format:

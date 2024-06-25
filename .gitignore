@@ -1,14 +1,15 @@
+word/
+
+.DS_Store
+/.quarto/
+*.RData
 *.Rproj
 .Rproj.user/
-index_cache/
-word/
-.DS_Store
 .Rhistory
 
-/.quarto/
-
 docs/
+*.html
+index_cache/
 labs/*_cache/
 labs/*_files/
 labs/data/sisver_public.csv
-*.RData
