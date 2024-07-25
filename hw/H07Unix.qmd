@@ -14,7 +14,9 @@ Display after: Oct 15 @ 5 PM
 
 ## Instructions
 
-Complete and submit the [Unix Shell](insert link) module. No need to submit anything here.
+Fork the [Learning-unix](https://classroom.github.com/a/21mcPm9s) repository and run `UnixShell.Rmd` from RStudio. This will start up a `learnr` tutorial with links to the tutorial videos and questions to answer as you follow along.
+
+This is the first asynchronous tutorial following this format. Your answers will automatically be sent when you complete the tutorial. For submission please let me know what you think about this format and if you have any suggestions for improvement.
 
 ## Grading
 * For full credit
