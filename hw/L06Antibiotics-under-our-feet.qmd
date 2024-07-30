@@ -4,7 +4,7 @@ title: "Antibiotics Under Our Feet"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L06Antibiotics-under-our-feet.html" title="Antibiotics Under Our Feet"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L06Antibiotics-under-our-feet.html" title="Antibiotics Under Our Feet Lab"></iframe>
 
 Due Date: Sept 24 @ end of day
 Points: 10

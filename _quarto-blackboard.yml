@@ -18,7 +18,13 @@ project:
     - hw/H05R-advanced-data.qmd
     - hw/H06R-tables-tips.qmd
     - hw/H07Unix.qmd
+    - hw/H08Snakemake.qmd
+    - hw/H09VariantCalling.qmd
+    - hw/H10AdvancedSnakemake.qmd
     - hw/E01midterm.qmd
+    - hw/E02project.qmd
+#    - hw/E03final.qmd
+
 
 format:
   html:

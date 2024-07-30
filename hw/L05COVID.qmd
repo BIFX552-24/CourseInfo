@@ -4,7 +4,7 @@ title: "Canine Confounders"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L05COVID.html" title="Canine Confounders"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L05COVID.html" title="Canine Confounders Lab"></iframe>
 
 Due Date: Sept 17 @ end of day
 Points: 10

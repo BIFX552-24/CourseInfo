@@ -4,7 +4,7 @@ title: "R Basics"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H03Subsetting-Flow.html" title="R Basics"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H03Subsetting-Flow.html" title="R Basics (Async)"></iframe>
 
 Due Date: Sept 10 @ end of day
 Points: 10

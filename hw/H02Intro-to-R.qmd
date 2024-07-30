@@ -4,7 +4,7 @@ title: "Intro to R"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H02Intro-to-R.html" title="Intro to R"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H02Intro-to-R.html" title="Intro to R (Async)"></iframe>
 
 Due Date: Sept 3 @ end of day
 Points: 10

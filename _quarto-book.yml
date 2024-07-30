@@ -45,11 +45,9 @@ book:
         - hw/H05R-advanced-data.qmd
         - hw/H06R-tables-tips.qmd
         - hw/H07Unix.qmd
-    - part: Exams & Final Project
-      chapters:
-        - hw/E01midterm.qmd
-#        - hw/E02Bioconductor_project.qmd
-#        - hw/E03final.qmd
+        - hw/H08Snakemake.qmd
+        - hw/H09VariantCalling.qmd
+        - hw/H10AdvancedSnakemake.qmd
 
 format: 
   html:

@@ -4,7 +4,7 @@ title: "Docker Practice"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L09Docker.html" title="Docker Practice"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L09Docker.html" title="Docker Practice Lab"></iframe>
 
 Due Date: Oct 29 @ end of day
 Points: 10

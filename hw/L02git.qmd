@@ -4,7 +4,7 @@ title: "git practice"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L02gitpractice.html" title="git practice"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L02gitpractice.html" title="Bioinformatics Tools Survey Lab"></iframe>
 
 Due Date: Aug 27 @ end of day
 Points: 10

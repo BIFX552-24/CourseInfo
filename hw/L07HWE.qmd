@@ -4,7 +4,7 @@ title: "Population genetics simulation"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L07HWE.html" title="Population genetics simulation"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L07HWE.html" title="Population genetics simulation Lab"></iframe>
 
 Due Date: Oct 1 @ end of day
 Points: 10

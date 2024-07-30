@@ -4,7 +4,7 @@ title: "RNA-seq data"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L04RNA-seq-data.html" title="RNA-seq data"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/L04RNA-seq-data.html" title="RNA-seq data Lab"></iframe>
 
 Due Date: Sept 10 @ end of day
 Points: 10

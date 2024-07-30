@@ -4,7 +4,7 @@ title: "R Joining Tables & Software Tips"
 
 <!--
 # insert into Blackboard assignment with:
-<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H06R-tables-tips.html" title="R Joining Tables & Software Tips"></iframe>
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H06R-tables-tips.html" title="R Joining Tables & Software Tips (Async)"></iframe>
 
 Due Date: Oct 1 @ end of day
 Points: 10

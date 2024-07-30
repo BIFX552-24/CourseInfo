@@ -14,6 +14,10 @@ quarto render --profile slides
 
 # render syllabus with
 quarto render --profile docx
+
+Post on Blackboard with:
+<p>The syllabus can be found on the <a href="https://bifx552-24.github.io/CourseInfo/">course website</a> below. The schedule is tentative, so check back for the most updated version.</p>
+<p><iframe width="100%" height="800" src="https://bifx552-24.github.io/CourseInfo/"></iframe></p>
 -->
 
 ```{r}
