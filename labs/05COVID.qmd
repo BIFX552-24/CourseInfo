@@ -34,10 +34,10 @@ library(survival)
 library(ggfortify)
 
 library(ggplot2)
+library(RColorBrewer)
 library(cowplot)
 theme_set(theme_cowplot())
 library(patchwork)
-source('https://tinyurl.com/wjm6ryj') # colorblind palettes
 
 library(knitr)
 library(kableExtra)
@@ -193,7 +193,7 @@ make_km_plot <- function(fact)
         autoplot(conf.int = FALSE) +
         
         # modifications to plot
-        scale_color_manual(values = cbbPalette[1:2]) +
+        scale_color_brewer(palette = "Dark2") +
         guides(color=guide_legend(title=fact))
 }
 
@@ -254,7 +254,7 @@ sisver_sub <- filter(sisver, !sector %in% c('CRUZ ROJA', 'ESTATAL', 'IMSS-OPORTU
 
 (g1 <- ggplot(sisver_sub, aes(dt_admit, fill = dog_all)) +
     geom_bar() +
-    scale_fill_manual(values = cbbPalette[1:3]) +
+    scale_fill_brewer(palette = "Dark2") +
     scale_y_log10())
 ```
 
