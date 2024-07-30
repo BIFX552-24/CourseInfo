@@ -407,6 +407,16 @@ Dr Randy Johnson
 
   <p class="date">2024-10-01</p>
 </section>
+<section class="slide level2">
+
+<!-- 
+GitHub Classroom:
+  - Starter code: https://github.com/BIFX552-24/HWE
+  - Group Assignment
+  - Private
+  - Notes: be sure to copy solutions branch when setting up my copy
+-->
+</section>
 <section id="todays-lab" class="slide level2">
 <h2>Today’s lab</h2>
 <ul>
@@ -478,20 +488,21 @@ p^2 + 2pq + q^2 = 1
 <h2>Population genetics simulation</h2>
 <p>We will use a simulation to explore Hardy-Weinberg equilibrium. To this end, we need to define the following data structures and functions:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co">#' gen</span></span>
-<span id="cb1-2"><a href=""></a><span class="co">#' A generation of individuals</span></span>
-<span id="cb1-3"><a href=""></a><span class="co">#' @format A list with the following fields:</span></span>
-<span id="cb1-4"><a href=""></a><span class="co">#' @field genos A vector of genotypes, one for each individual in the </span></span>
-<span id="cb1-5"><a href=""></a><span class="co">#'   population, with 0, 1, and 2 representing genotypes AA, AB, and BB</span></span>
-<span id="cb1-6"><a href=""></a><span class="co">#' @field p The observed frequency of allele A</span></span>
-<span id="cb1-7"><a href=""></a><span class="co">#' @field q The observed frequency of allele B</span></span>
-<span id="cb1-8"><a href=""></a><span class="co">#' @field pAA The observed frequency of genotype AA</span></span>
-<span id="cb1-9"><a href=""></a><span class="co">#' @field pAB The observed frequency of genotype AB</span></span>
-<span id="cb1-10"><a href=""></a><span class="co">#' @field pBB The observed frequency of genotype BB</span></span>
-<span id="cb1-11"><a href=""></a></span>
-<span id="cb1-12"><a href=""></a><span class="co">#' gen_list</span></span>
-<span id="cb1-13"><a href=""></a><span class="co">#' A list of generations</span></span>
-<span id="cb1-14"><a href=""></a><span class="co">#' @format A list of `gen` objects, one for each successive generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="co">#' gens</span></span>
+<span id="cb1-2"><a href=""></a><span class="co">#' Data on multiple generations of individuals</span></span>
+<span id="cb1-3"><a href=""></a><span class="co">#' @format A tibble where each row represents a subsequent generation </span></span>
+<span id="cb1-4"><a href=""></a><span class="co">#'   including the following fields:</span></span>
+<span id="cb1-5"><a href=""></a><span class="co">#' @field sim A numeric vector indicating the simulation number</span></span>
+<span id="cb1-6"><a href=""></a><span class="co">#' @field generation A numeric vector indicating the generation number</span></span>
+<span id="cb1-7"><a href=""></a><span class="co">#' @field genos A list of genotypes with one vector of genotypes per </span></span>
+<span id="cb1-8"><a href=""></a><span class="co">#'   generation. Each value in a vector represents an individual in the </span></span>
+<span id="cb1-9"><a href=""></a><span class="co">#'   population, with 0, 1, and 2 representing genotypes AA, AB, and BB</span></span>
+<span id="cb1-10"><a href=""></a><span class="co">#' @field n A numeric vector indicating the population size.</span></span>
+<span id="cb1-11"><a href=""></a><span class="co">#' @field p A numeric vector with observed allele frequencies of A.</span></span>
+<span id="cb1-12"><a href=""></a><span class="co">#' @field q A numeric vector with with observed frequencies of B.</span></span>
+<span id="cb1-13"><a href=""></a><span class="co">#' @field pAA A numeric vector with observed frequencies of genotype AA.</span></span>
+<span id="cb1-14"><a href=""></a><span class="co">#' @field pAB A numeric vector with observed frequencies of genotype AB.</span></span>
+<span id="cb1-15"><a href=""></a><span class="co">#' @field pBB A numeric vector with observed frequencies of genotype BB.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="population-genetics-simulation-1" class="slide level2">
@@ -499,9 +510,12 @@ p^2 + 2pq + q^2 = 1
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href=""></a><span class="co">#' gen0</span></span>
 <span id="cb2-2"><a href=""></a><span class="co">#' Generate the initial population</span></span>
-<span id="cb2-3"><a href=""></a><span class="co">#' @param n Number of individuals</span></span>
-<span id="cb2-4"><a href=""></a><span class="co">#' @param p Frequency of allele A (frequency of B is assumed to be 1 - p)</span></span>
-<span id="cb2-5"><a href=""></a><span class="co">#' @return A `gen_list` object of length 1 containing the initial generation</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-3"><a href=""></a><span class="co">#' @param n Number of individuals to simulate in the next generation</span></span>
+<span id="cb2-4"><a href=""></a><span class="co">#' @param p Allele frequency of allele A</span></span>
+<span id="cb2-5"><a href=""></a><span class="co">#' @param sim Simulation number</span></span>
+<span id="cb2-6"><a href=""></a><span class="co">#' @details The returned `gens` object only has one row, containing the</span></span>
+<span id="cb2-7"><a href=""></a><span class="co">#'   initial generation</span></span>
+<span id="cb2-8"><a href=""></a><span class="co">#' @return A `gens` object containing simulated population.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="population-genetics-simulation-2" class="slide level2">
@@ -509,32 +523,48 @@ p^2 + 2pq + q^2 = 1
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href=""></a><span class="co">#' next_gen</span></span>
 <span id="cb3-2"><a href=""></a><span class="co">#' Generate the next generation</span></span>
-<span id="cb3-3"><a href=""></a><span class="co">#' @param gen_prev A `gen_list` object containing previous generations (at</span></span>
-<span id="cb3-4"><a href=""></a><span class="co">#'   least one)</span></span>
+<span id="cb3-3"><a href=""></a><span class="co">#' @param genos A vector of genotypes containing previous generations </span></span>
+<span id="cb3-4"><a href=""></a><span class="co">#'   (e.g. `gen_prev[[1]]$genos`)</span></span>
 <span id="cb3-5"><a href=""></a><span class="co">#' @param n Number of individuals to simulate in the next generation</span></span>
-<span id="cb3-6"><a href=""></a><span class="co">#' @param p Frequency of allele A (frequency of B is assumed to be 1 - p)</span></span>
-<span id="cb3-7"><a href=""></a><span class="co">#' @details Individuals of the most recent generation will be randomly </span></span>
-<span id="cb3-8"><a href=""></a><span class="co">#'   sorted and paired to generate the next generation. Offspring will be</span></span>
-<span id="cb3-9"><a href=""></a><span class="co">#'   generated by randomly selecting a pair of parents, generating a single</span></span>
-<span id="cb3-10"><a href=""></a><span class="co">#'   offspring, and repeating this process until the desired number of</span></span>
-<span id="cb3-11"><a href=""></a><span class="co">#'   offspring is reached.</span></span>
-<span id="cb3-12"><a href=""></a><span class="co">#' @return A `gen_list` object of length `length(gen_prev) + 1` including </span></span>
-<span id="cb3-13"><a href=""></a><span class="co">#'   `gen_prev` and the newly simulated generation.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-6"><a href=""></a><span class="co">#' @param generation Generation number</span></span>
+<span id="cb3-7"><a href=""></a><span class="co">#' @param sim Simulation number</span></span>
+<span id="cb3-8"><a href=""></a><span class="co">#' @param mating_fun A function to pair up parents for mating</span></span>
+<span id="cb3-9"><a href=""></a><span class="co">#' @details Individuals in `genos` will be randomly sorted and paired to</span></span>
+<span id="cb3-10"><a href=""></a><span class="co">#'   generate the next generation. Offspring will be generated by randomly</span></span>
+<span id="cb3-11"><a href=""></a><span class="co">#'   selecting a pair of parents, generating a single offspring, and </span></span>
+<span id="cb3-12"><a href=""></a><span class="co">#'   repeating this process until the desired number of offspring is reached.</span></span>
+<span id="cb3-13"><a href=""></a><span class="co">#' @return A `gens` object containing simulated population.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="population-genetics-simulation-3" class="slide level2">
 <h2>Population genetics simulation</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="co">#' plot_gen_list</span></span>
-<span id="cb4-2"><a href=""></a><span class="co">#' Plot the allele and genotype frequencies of a `gen_list` object</span></span>
-<span id="cb4-3"><a href=""></a><span class="co">#' @param gen_list A `gen_list` object</span></span>
-<span id="cb4-4"><a href=""></a><span class="co">#' @return A ggplot object</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href=""></a><span class="co">#' sim_gens</span></span>
+<span id="cb4-2"><a href=""></a><span class="co">#' Simulate multiple generations</span></span>
+<span id="cb4-3"><a href=""></a><span class="co">#' @param n Number of individuals to simulate in the next generation</span></span>
+<span id="cb4-4"><a href=""></a><span class="co">#' @param p Allele frequency of allele A</span></span>
+<span id="cb4-5"><a href=""></a><span class="co">#' @param nsims Number of populations / simulations to run</span></span>
+<span id="cb4-6"><a href=""></a><span class="co">#' @param mating_fun A function to pair up parents for mating</span></span>
+<span id="cb4-7"><a href=""></a><span class="co">#' @param state An existing population to build from (i.e. skipping </span></span>
+<span id="cb4-8"><a href=""></a><span class="co">#'   the simulation of an initial generation)</span></span>
+<span id="cb4-9"><a href=""></a><span class="co">#' @description This function simulates multiple generations of a population</span></span>
+<span id="cb4-10"><a href=""></a><span class="co">#'   and includes the option to start from an existing `gens` object.</span></span>
+<span id="cb4-11"><a href=""></a><span class="co">#' @return A `gens` object containing simulated population(s).</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="population-genetics-simulation-4" class="slide level2">
+<h2>Population genetics simulation</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a><span class="co">#' plot_allele_by_gen</span></span>
+<span id="cb5-2"><a href=""></a><span class="co">#' Plot the allele frequencies of a `gens` object</span></span>
+<span id="cb5-3"><a href=""></a><span class="co">#' @param gens A `gens` object</span></span>
+<span id="cb5-4"><a href=""></a><span class="co">#' @return A ggplot object</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="primary-tasks" class="slide level2">
 <h2>Primary tasks</h2>
 <ul>
-<li>Initialize your group’s repository with the provided <a href="need%20link">template</a>.</li>
+<li>Initialize your group’s repository with the provided <a href="https://classroom.github.com/a/w4oIFw_8">template</a>.</li>
 </ul>
 <ul>
 <li><p>Implement the functions <code>gen0</code>, <code>next_gen</code>, and <code>plot_gen_list</code> in R.</p></li>
@@ -553,7 +583,7 @@ p^2 + 2pq + q^2 = 1
 <li>A simulation of the consequences of departures from HWE.
 <ul>
 <li>Each group will pick a different assumption to simulate.</li>
-<li>Complete as many assumptions as time allows.</li>
+<li>Address as many assumptions as time allows.</li>
 </ul></li>
 </ul></li>
 </ul>

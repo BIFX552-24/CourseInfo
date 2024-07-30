@@ -6,7 +6,8 @@
     "section": "",
     "text": "Welcome to BIFX 552 - Bioinformatics Data Skills",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>CourseInfo</span>"
+      "Course Information",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -14,526 +15,1011 @@
     "href": "index.html#syllabus",
     "title": "BIFX 552 - Bioinformatics Data Skills",
     "section": "Syllabus",
-    "text": "Syllabus\n\nCourse Description\nThis class provides an introduction to applied data science skills needed by bioinformatics professionals. A focus will be placed on reproducible bioinformatics research and will include the following topics and tools: beginning to intermediate use of the Unix command line, working with remote computing resources, version tracking, R and Bioconductor, tools for manipulating sequence data, and creation of pipelines.\n\nInstructor: Randall Johnson, PhD\nOffice hours: Office hours will be held immediately before and after in-person meetings. Email me to schedule a virtual office hour at another time.\nPrerequisites: BIFX 503\nTextbooks: We will not be using a textbook this term, but you may find the following helpful. All are freely available online.\n\nR for Data Science\nAdvanced R\nR Packages\n\nCommunications: Course communications will be posted on Blackboard.\nCode of Conduct: We want to foster a safe, enjoyable and productive learning environment. People like you add value to our program. To meet this end, all participants will be expected to follow the course code of conduct located in the course documents on Blackboard.\nGradCare: Graduate school can be stressful. Hood College is here to help. We offer a wide range of support services for graduate students. Our programs and resources address the eight dimensions of wellness—emotional, physical, social, intellectual, spiritual, occupational, financial and environmental—so you can stay healthy while maintaining school-work-life balance.\nAccessibility: As the instructor of this course, I endeavor to provide an inclusive learning environment. However, if you experience barriers to learning in this course, do not hesitate to discuss them with me and the Office for Accessibility Services, 301-696-3421, gmuer@hood.edu.\n\n\n\nLearning Objectives\nOn completion of this course, students should be comfortable with the following:\n\nUse of R and Bioconductor to perform bioinformatic analysis tasks\nUse of the Unix command line to manipulate data and perform bioinformatic analysis tasks\nLogging into and using remote computing resources\nWorking with version controlled code repositories in a collaborative work environment\nStitching a series of commands and/or programs together into a reusable pipeline\n\n\n\nAsynchronous and In-Person Content\nAsynchronous content will be posted weekly, and in-person labs will be scheduled on Tuesday evenings throughout the term at 5:30 PM (see the schedule below). If you need to attend a particular class virtually (e.g. while on travel), in-person labs can be streamed. Course content will be based on up-to-date, publicly available material from experts in the Data Carpentry, Software Carpentry, and Bioconductor communities.\n\n\nHomework and Course Project\nThere will be homework assignments associated with each course module. This will give you an opportunity to practice what we cover each week. Homework from asynchronous content will be due on Tuesdays and should be completed before each in-person meeting. The last few weeks of the course will be devoted to a group project based on a bioinformatics workflow from Bioconductor.\n\n\nGrading\nGrades will be based on completion of homework, a group project and two exams.\n\nAsynchronous Content - 25%\nIn-person Content - 25%\nBioconductor Project - 10%\nMid-term - 20%\nFinal exam - 20%\n\nLate submissions of any work will be subject to a 5% penalty for each day past the due date. The maximum penalty for late work will be 50%.\n\n\nWeather\nIn the event of severe weather resulting in the closure of Hood College and the cancellation of an in-person meeting, the meeting will be held virtually at the scheduled time and a recording posted on Blackboard for asynchronous viewing.\n\n\nTentative Class Schedule\n\n\n\n\n\nWeek\nDate\nAsynchronous Content\nIn Person Content\n\n\n\n\n1\nAug 20\nGit\nClass intro, Markdown / Quarto\n\n\n2\nAug 27\nR Intro\ngit practice\n\n\n3\nSep 3\nSubsetting Data, R Control Flow\np-Hacking\n\n\n4\nSep 10\nR Graphics, R Vectorization, R Functions\nRNA-Seq Data Viz\n\n\n5\nSep 17\nR Advanced Data\nCanine Confounders\n\n\n6\nSep 24\nJoining Tables, R Software Tips\nAntibiotics Under Our Feet\n\n\n7\nOct 1\nCatch Up\nPopulation Genetics Simulation\n\n\n8\nOct 8\nMidterm\nMidterm Q/A (virtual)\n\n\n9\nOct 15\nFall break\n(no class)\n\n\n10\nOct 22\nUnix\nCommand Line Practice\n\n\n11\nOct 29\nSnakemake\nDocker practice\n\n\n12\nNov 5\nVariant Calling Workflow\nVariant Calling Pipeline\n\n\n13\nNov 12\nAdvanced Snakemake\nVariant Calling Pipeline (cont)\n\n\n14\nNov 19\nIntro to Bioconductor\nBioconductor Project\n\n\n15\nNov 26\nGroup Work\nProject Q/A (in person)\n\n\n16\nDec 3\nGroup Work\nProject Presentations / Final Exam",
+    "text": "Syllabus\n\nCourse Description\nThis class provides an introduction to applied data science skills needed by bioinformatics professionals. A focus will be placed on reproducible bioinformatics research and will include the following topics and tools: beginning to intermediate use of the Unix command line, working with remote computing resources, version tracking, R and Bioconductor, tools for manipulating sequence data, and creation of pipelines.\n\nInstructor: Randall Johnson, PhD\nOffice hours: Office hours will be held immediately before and after in-person meetings. Email me to schedule a virtual office hour at another time.\nPrerequisites: BIFX 503\nTextbooks: We will not be using a textbook this term, but you may find the following helpful. All are freely available online.\n\nR for Data Science\nAdvanced R\nR Packages\n\nCommunications: Course communications will be posted on Blackboard.\nCode of Conduct: We want to foster a safe, enjoyable and productive learning environment. People like you add value to our program. To meet this end, all participants will be expected to follow the course code of conduct located in the course documents on Blackboard.\nGradCare: Graduate school can be stressful. Hood College is here to help. We offer a wide range of support services for graduate students. Our programs and resources address the eight dimensions of wellness—emotional, physical, social, intellectual, spiritual, occupational, financial and environmental—so you can stay healthy while maintaining school-work-life balance.\nAccessibility: As the instructor of this course, I endeavor to provide an inclusive learning environment. However, if you experience barriers to learning in this course, do not hesitate to discuss them with me and the Office for Accessibility Services, 301-696-3421, gmuer@hood.edu.\n\n\n\nLearning Objectives\nOn completion of this course, students should be comfortable with the following:\n\nUse of R and Bioconductor to perform bioinformatic analysis tasks\nUse of the Unix command line to manipulate data and perform bioinformatic analysis tasks\nLogging into and using remote computing resources\nWorking with version controlled code repositories in a collaborative work environment\nStitching a series of commands and/or programs together into a reusable pipeline\n\n\n\nAsynchronous and In-Person Content\nAsynchronous content will be posted weekly, and in-person labs will be scheduled on Tuesday evenings throughout the term at 5:30 PM (see the schedule below). If you need to attend a particular class virtually (e.g. while on travel), in-person labs can be streamed. Much of the course content will be based on up-to-date, publicly available material from experts in the Data Carpentry, Software Carpentry, and Bioconductor communities.\n\n\nHomework and Course Project\nThere will be homework assignments associated with each course module. This will give you an opportunity to practice what we cover each week. Homework from asynchronous content will typically be due on Tuesdays and should be completed before each in-person meeting. The last few weeks of the course will be devoted to a group project based on a bioinformatics workflow from Bioconductor.\n\n\nGrading\nGrades will be based on completion of homework, a group project and two exams.\n\nAsynchronous Content - 25%\nIn-person Content - 25%\nBioconductor Project - 10%\nMid-term - 20%\nFinal exam - 20%\n\nLate submissions of any work will be subject to a 5% penalty for each day past the due date. The maximum penalty for late work will be 50%.\n\n\nWeather\nIn the event of severe weather resulting in the closure of Hood College and the cancellation of an in-person meeting, the meeting will be held virtually at the scheduled time and a recording posted on Blackboard for asynchronous viewing.\n\n\nTentative Class Schedule\n\n\n\n\n\nWeek\nDate\nAsynchronous Content\nIn Person Content\n\n\n\n\n1\nAug 20\nGit\nClass intro, Markdown / Quarto\n\n\n2\nAug 27\nR Intro\nBioinformatics Tools Survey\n\n\n3\nSep 3\nSubsetting Data, R Control Flow\np-Hacking\n\n\n4\nSep 10\nR Graphics, R Vectorization, R Functions\nRNA-Seq Data Viz\n\n\n5\nSep 17\nR Advanced Data\nCanine Confounders\n\n\n6\nSep 24\nJoining Tables, R Software Tips\nAntibiotics Under Our Feet\n\n\n7\nOct 1\nCatch Up\nPopulation Genetics Simulation\n\n\n8\nOct 8\nMidterm\nMidterm Q/A (virtual)\n\n\n9\nOct 15\nFall break\n(no class)\n\n\n10\nOct 22\nUnix\nCommand Line Practice\n\n\n11\nOct 29\nSnakemake\nDocker practice\n\n\n12\nNov 5\nVariant Calling Workflow\nVariant Calling Pipeline\n\n\n13\nNov 12\nAdvanced Snakemake\nVariant Calling Pipeline (cont)\n\n\n14\nNov 19\nIntro to Bioconductor\nBioconductor Project\n\n\n15\nNov 26\nGroup Work\nProject Q/A (in person)\n\n\n16\nDec 3\nGroup Work\nProject Presentations / Final Exam",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>CourseInfo</span>"
+      "Course Information",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html",
+    "href": "code_of_conduct.html",
+    "title": "2  Course code of conduct",
+    "section": "",
+    "text": "Academic Honor Code\nStudents are obligated to uphold principles of honesty, responsibility, and intellectual integrity in all activities related to their Hood College experience. The Academic Honor Code — a subset of the Code of Conduct — outlines expectations for student academic behavior and prohibits cheating and unauthorized assistance, plagiarism, resubmission of duplicate work, and other forms of academic dishonesty. Students should review the full Academic Honor Code located in Appendix B of the Student Handbook. Students should always consult with instructors to determine what types of aid are permitted in each specific class and on each assignment.\nFaculty have authority to investigate alleged violations and issue sanctions. For unintentional plagiarism or similar violations, a sanction of a zero on the assignment is usually appropriate. For intentional plagiarism, cheating, and similar violations, failure of the course is a reasonable sanction. Faculty are required to report all violations to the Chair of the Academic Judicial Council (AJC), the Dean of Student Success. AJC will conduct hearings for students with egregious and/or multiple violations to determine if additional sanctions beyond those imposed by the instructor are warranted, including Suspension from the College.",
+    "crumbs": [
+      "Course Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course code of conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#academic-honor-code",
+    "href": "code_of_conduct.html#academic-honor-code",
+    "title": "2  Course code of conduct",
+    "section": "",
+    "text": "Reusing code\nUnless explicitly stated otherwise, you may make use of online resources (e.g. StackOverflow) for coding examples on assignments and exams. If you directly use code from an outside source (or use it as inspiration), you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism.\n\n\nUse of artificial intelligence (AI)\nYou should treat AI tools, such as ChatGPT, the same as other online resources. There are two guiding principles that govern how you can use AI in this course:\n\nCognitive dimension: Working with AI should not reduce your ability to think clearly. AI should be used to facilitate, rather than hinder, learning.\nEthical dimension: Students using AI should be transparent about their use and make sure it aligns with academic integrity.\n\nAI tools for code: You may make use of the technology for coding examples on assignments; if you do so, you must explicitly cite where you obtained the code. Any recycled code that is discovered and is not explicitly cited will be treated as plagiarism. You may use these guidelines for citing AI-generated content.\nNo AI tools for narrative: Unless instructed otherwise, AI is not permitted for writing narrative on assignments. In general, you may use AI as a resource as you complete assignments but not to answer the exercises for you. You are ultimately responsible for the work you turn in; it should reflect your understanding of the course content.\n\n\nIf you are unsure if the use of a particular resource complies with the academic honesty policy, please ask a member of the teaching team.",
+    "crumbs": [
+      "Course Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course code of conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#hood-college-aims-to-provide-a-supportive-collegial-and-harassment-free-environment",
+    "href": "code_of_conduct.html#hood-college-aims-to-provide-a-supportive-collegial-and-harassment-free-environment",
+    "title": "2  Course code of conduct",
+    "section": "Hood College aims to provide a supportive, collegial, and harassment-free environment",
+    "text": "Hood College aims to provide a supportive, collegial, and harassment-free environment\nHood College is dedicated to providing a supportive, collegial, and harassment-free experience for everyone, regardless of:\n\ngender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, or religion.\nintellectual position: approaches to data analysis, software preferences, coding style, scientific perspective, etc.\n\nThis code of conduct, as well as the Hood College Code of Conduct and the Academic Honor Code, applies to all course-related communications, including but not limited to Blackboard, GitHub, the BIFX cluster, lectures, coding demos, labs, class time, group discussion, other Microsoft products and any other discussions related to BIFX 552. We do not tolerate harassment, intimidation, or bullying of students or staff. Sexual language and imagery are not appropriate in communications or in online venues, including chats.\nViolating these rules will be dealt with according to the procedures outlined in the Student Handbook.\n\nExamples of unacceptable harassment, intimidation, and bullying behavior\nHarassment includes, but is not limited to:\n\nMaking comments in chats, to an audience or personally, that belittle or demean another person\nSharing sexual images online\nHarassing photography or recording\nSustained disruption of talks or other events\nUnwelcome sexual attention\nAdvocating for, or encouraging, any of the above behavior\n\nIntimidation and bullying include, but are not limited to:\n\nAggressive or browbeating behavior directed at someone during a public presentation\nMocking or insulting another person’s intellect, work, perspective, or question/comment\nMaking reference to someone’s gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, age, religion, or other personal attributes in the context of a scientific discussion\nDeliberately making someone feel unwelcome",
+    "crumbs": [
+      "Course Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course code of conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#social-media-policy",
+    "href": "code_of_conduct.html#social-media-policy",
+    "title": "2  Course code of conduct",
+    "section": "Social media policy",
+    "text": "Social media policy\nImages and content from lectures, labs, coding demos and class discussions may be shared publicly through social media or other public forums unless the instructor asks for it not to be. Homework and exams should not be shared or discussed outside of the course forums.",
+    "crumbs": [
+      "Course Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course code of conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#enforcement",
+    "href": "code_of_conduct.html#enforcement",
+    "title": "2  Course code of conduct",
+    "section": "Enforcement",
+    "text": "Enforcement\nIndividuals asked to stop any harassing behavior are expected to comply immediately.\nIf an individual engages in harassing behavior, the instructor and/or other staff within the program will work with the offender to remediate the behavior. This includes warning the offender or possibly taking other academic actions.\nThe instructor may take action to redress anything designed to, or with the clear impact of, disrupting the course or making the environment hostile for any individuals.\nWe expect everyone to follow these rules throughout the course and during all course-related online activities.",
+    "crumbs": [
+      "Course Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course code of conduct</span>"
+    ]
+  },
+  {
+    "objectID": "code_of_conduct.html#reporting",
+    "href": "code_of_conduct.html#reporting",
+    "title": "2  Course code of conduct",
+    "section": "Reporting",
+    "text": "Reporting\nIf someone makes you or anyone else feel unsafe or unwelcome, please report it as soon as possible. Harassment and other code of conduct violations reduce the value of our program for everyone. We want to foster a safe, enjoyable and productive learning environment. People like you make our program better.\nYou can make a report either personally or anonymously.\n\nAnonymous or Non-anonymous Report\nYou can make an anonymous or non-anonymous report here. We can’t follow up an anonymous report with you directly, but we will fully investigate it and do our best to prevent a recurrence.\n\n\nPersonal Report\nYou can make a personal report with Dr Johnson or Dr Darby.\nWhen taking a personal report, we will do our best to maintain your safety and privacy. We may involve other department staff to ensure your report is managed properly. Once safe, we’ll ask you to tell us about what happened. This can be upsetting, but we’ll handle it as respectfully as possible, and you can include someone to support you. You won’t be asked to confront anyone, and we won’t tell anyone who you are. We will do our best to maintain your anonymity when addressing the incident. In the event that remediation may expose your identity, we will discuss options with you prior to taking any action.\nWe will be happy to help you contact campus security, local law enforcement, local support services, or otherwise assist you to feel safe for the duration of the course. We value your presence and contributions to this course.\n\n\nCode of Conduct violation reports\n\nDiscrimination, harrassment and misconduct can be reported here.\nBias-related incidents can be reported here",
+    "crumbs": [
+      "Course Information",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Course code of conduct</span>"
     ]
   },
   {
     "objectID": "labs/01markdown.html",
     "href": "labs/01markdown.html",
-    "title": "2  Markdown / Quarto",
+    "title": "3  Markdown / Quarto",
     "section": "",
     "text": "Welcome and Introductions",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Markdown / Quarto</span>"
     ]
   },
   {
     "objectID": "labs/01markdown.html#welcome-and-introductions",
     "href": "labs/01markdown.html#welcome-and-introductions",
-    "title": "2  Markdown / Quarto",
+    "title": "3  Markdown / Quarto",
     "section": "",
     "text": "What do you hope to get from this class?\nWhat was the last book that you read?",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Markdown / Quarto</span>"
     ]
   },
   {
     "objectID": "labs/01markdown.html#course-overview",
     "href": "labs/01markdown.html#course-overview",
-    "title": "2  Markdown / Quarto",
+    "title": "3  Markdown / Quarto",
     "section": "Course Overview",
     "text": "Course Overview\n\nBlackboard tour\nGitHub tour\nSyllabus\nCode of Conduct",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Markdown / Quarto</span>"
     ]
   },
   {
     "objectID": "labs/01markdown.html#todays-lab",
     "href": "labs/01markdown.html#todays-lab",
-    "title": "2  Markdown / Quarto",
+    "title": "3  Markdown / Quarto",
     "section": "Today’s lab",
     "text": "Today’s lab\n\nQuarto tour.\n\nQuarto documentation guide.\nMarkdown basics.\nFormatting code block output.\n\nThe iris dataset.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Markdown / Quarto</span>"
     ]
   },
   {
     "objectID": "labs/01markdown.html#the-iris-dataset",
     "href": "labs/01markdown.html#the-iris-dataset",
-    "title": "2  Markdown / Quarto",
+    "title": "3  Markdown / Quarto",
     "section": "The iris dataset",
     "text": "The iris dataset\nWe are going to start with the iris demo from Rpubs.com, and then we’ll go back and make some upgrades to the formatting.\n\nRequired\n\nStart by replicating the information and formatting found at https://rpubs.com/moeransm/intro-iris (export HTML code). Be sure to leave a note attirbuting the original authors.\nSet up a repository using this GitHub Classroom link and push your code and html output to GitHub.\n\n\n\nConfigure your repository to publish your webpage using GitHub Pages.\n\n\n\nConfigure your repository to publish your webpage using GitHub Pages.\n\nOn step 6, select “/(root)” to publish your html code from the root directory.\n\n\n\nExport your document in Word format and submit it on Blackboard.\n\n\n\nOptional\n\nSet up GitHub pages on your repository.\nNow make it so that the user can opt for dark mode.\nTurn the paragraph starting “The summary() function gives summary statistics for any dataset.” into at tip using a callout block.\nFold the code in the visualization section, such that only the figures are shown by default.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Markdown / Quarto</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Markdown / Quarto</span>"
     ]
   },
   {
     "objectID": "labs/02git.html",
     "href": "labs/02git.html",
-    "title": "3  git practice",
+    "title": "4  Bioinformatics Tools Survey",
     "section": "",
     "text": "Today’s Lab",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bioinformatics Tools Survey</span>"
     ]
   },
   {
     "objectID": "labs/02git.html#todays-lab",
     "href": "labs/02git.html#todays-lab",
-    "title": "3  git practice",
+    "title": "4  Bioinformatics Tools Survey",
     "section": "",
     "text": "Practice git commands at Learn Git Branching\n\n\nBioinformatics tools survey: a collaborative exercise using git\n\nYou’ll need a GitHub account and git. I recommend installing Sourcetree or something similar.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bioinformatics Tools Survey</span>"
     ]
   },
   {
     "objectID": "labs/02git.html#learn-git-branching",
     "href": "labs/02git.html#learn-git-branching",
-    "title": "3  git practice",
+    "title": "4  Bioinformatics Tools Survey",
     "section": "Learn Git Branching ",
     "text": "Learn Git Branching \nWork on the following practice modules of Learn Git Branching\n\nIntroduction Sequence\nRamping Up\nMoving Work Around\nA Mixed Bag",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bioinformatics Tools Survey</span>"
     ]
   },
   {
     "objectID": "labs/02git.html#setup-bioinformatics-tools-survey",
     "href": "labs/02git.html#setup-bioinformatics-tools-survey",
-    "title": "3  git practice",
+    "title": "4  Bioinformatics Tools Survey",
     "section": "Setup bioinformatics tools survey ",
     "text": "Setup bioinformatics tools survey \n\nBreak up into groups of 2 - 4 students and create a bioinformatics tools survey assignment repository together.\n\nThe first student will need to create a group in GitHub classroom (follow the link above).\nSubsequent group members can then join the group on GitHub classroom.\n\n\n\nEveryone clone the group repository to their individual computers.\nEveryone find a few bioinformatics tools and add them to the csv file, tools.csv.\nStage, commit and push your changes to GitHub, dealing with any merge conflicts as a team.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bioinformatics Tools Survey</span>"
     ]
   },
   {
     "objectID": "labs/02git.html#feature-branching",
     "href": "labs/02git.html#feature-branching",
-    "title": "3  git practice",
+    "title": "4  Bioinformatics Tools Survey",
     "section": "Feature branching ",
     "text": "Feature branching \n\nEveryone pick a different piece of information to add to the chart.\n\nDocumentation (add a link to the documentation - eg Genome Analysis Toolkit)\nTechnology (type or source of data)\nOS (operating systems it will run on)\nCost (license cost)\n\n\n\nEveryone create a new branch for your feature and check it out.\nUpdate tools.csv with the information for your feature.\nStage, commit and push your branch to GitHub.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bioinformatics Tools Survey</span>"
     ]
   },
   {
     "objectID": "labs/02git.html#collaboration-and-integration",
     "href": "labs/02git.html#collaboration-and-integration",
-    "title": "3  git practice",
+    "title": "4  Bioinformatics Tools Survey",
     "section": "Collaboration and integration ",
     "text": "Collaboration and integration \n\nSwitch back to the master branch.\nEveryone pick a feature branch that you didn’t create and pull remote changes.\nMerge the changes from the feature branch you just pulled into main.\nPush your changes to GitHub, dealing with conflicts as a team.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>git practice</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Bioinformatics Tools Survey</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html",
     "href": "labs/03phacking.html",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "",
     "text": "Today’s lab",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#todays-lab",
     "href": "labs/03phacking.html#todays-lab",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "",
     "text": "What is p-hacking?\nTrain your p-hacking skills!",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#what-is-p-hacking",
     "href": "labs/03phacking.html#what-is-p-hacking",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "What is p-hacking?",
     "text": "What is p-hacking?\nP-hacking is the introduction of bias into a study or experiment that increases the likelihood of small p-values independent of any “real” correlation between the measured variables and the outcome of interest.\nDid you know that the per capita cheese consumption correlates with the number of people who died by becoming tangled in their bed sheets between 1999 and 2009?\n\nDid you know that the total revenue generated by arcades correlates with the number of computer science doctorates awarded in the US between 1999 and 2009?\n\nYou can check out these and many other “interesting” results on Tyler Vigen’s website, Spurious correlations.\nThese facts are intriguing until you look a little closer into how he discovered these factoids. He basically took every statistic he could find between 1999 and 2009, from death rates, to consumer trends, to spending, and compared them all with each other. He has found some really entertaining bogus correlations.\nWhen it comes down to it, if you really want to make a case with data, you can hack your way to a story without too much work. Let’s say we want to tell a story about what makes a great data scientist.\n\nLet’s start by sending out a survey to all of our data scientist friends, asking:\n\nFavorite color\nShoe size\nHair color\nWedding ring size\nNumber of milkshakes eaten each month\nDistance to the nearest Walmart\n\nWe’ll walk up and down Carroll Creek, asking “random” passersby to respond to the same survey.\nIf we don’t find any “significant” correlations, we’ll simply come up with some additional questions until we find something that stands out.\n\nIt will not take long for us to find a story - perhaps we’ll discover that drinking as few as three extra beers during each full moon will make us better data scientists!",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#p-hacking-practice",
     "href": "labs/03phacking.html#p-hacking-practice",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "P-hacking practice",
     "text": "P-hacking practice\nFor this part of the lab, we will be using the p-hacker app developed by Felix Schönbrodt.\n\nStart by picking experimental and control groups. For my research, I’d like to find out what makes people good at data science!\n\nExperimental group: Data scientists\nControl group: Random pedestrian walking down Carroll Creek.\n\nWe’ll use defaults for the rest of the options. Can you find a random seed that results in something publishable? (For the purposes of this lab, we’ll say that anything with a p-value less than 0.05 is publishable.)\n\n\n\n\n\n\n\nRandom seed 1521\n\n\n\n\n\n\nDV1 looks pretty good, except there is a pesky outlier at the bottom of the random pedestrian group. Let’s drop it, because it looks suspicious.\nWe have acheived significance!\nTime to publish.\n\n\n\n\n\nTry some other options and see what interesting results you can come up with.\n\nIncreasing the number of variables (Number of DV's) will increase your chances of finding something “interesting”.\nA smaller sample size is usually more prone to false positive findings, but try adding a few participants at a time until you get something significant.\nControlling for different variables (socioeconomic status, age, gender, …) might help. If it does, great! If not, you can skip that part.\n\n\n\n\n\n\n\n\nRandom seed 827346\n\n\n\n\n\n\nNumber of DV’s 10\nAdd 5 new participants.\nDV3 looks pretty good!\n\n\n\n\n\n\n\n\n\n\nWhat not to do\n\n\n\nThese are great examples of how not to run a study. While these ideas look pretty egregious, it is surprisingly easy to p-hack. Keeping a watchful eye out for p-hacking will save you grief and wasted time!",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#magic-coin",
     "href": "labs/03phacking.html#magic-coin",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "Magic Coin",
     "text": "Magic Coin\nI have a magic coin. Every time I flip the coin, I get a heads!\n\n# 1 = Heads, 0 = Tails\nrbinom(10, 1, 0.5)\n\n [1] 1 1 1 1 1 1 1 1 1 1\n\n\nDon’t believe that it always gives me heads? Let’s try that again:\n\n# 1 = Heads, 0 = Tails\nrbinom(10, 1, 0.5)\n\n [1] 1 1 1 1 1 1 1 1 1 1\n\n\nOK, if you check the code behind this page, you’ll see that I used a very special random seed. It will actually generate 29 heads in a row. The probability of that is approximately 1.9^{-9}, but it doesn’t take much work to find one of those special random seeds if you are patient.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#challenge",
     "href": "labs/03phacking.html#challenge",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "Challenge",
     "text": "Challenge\nFind a random seed that results in 10 heads in a row when executing the following code:\n# your seed\nseed &lt;- 1234\n\nset.seed(seed)\n\nrbinom(10, 1, 0.5)\n[1] 1 1 1 1 1 1 1 1 1 1\nThis is a fairly trivial task, but trying out one seed at a time until you find one that works is going to be tedious.\nLet’s start by picking out a thousand seeds to try:\n\nset.seed(29384)\nseeds &lt;- runif(1e3, 0, .Machine$integer.max) |&gt;\n  as.integer() |&gt;\n  unique()\n\nAs we automatically test out these seeds, we will want to keep track of which seeds are the best.\n\nbestseed &lt;- 0\nmaxHeads &lt;- 0\n\nThis function will test the number of heads we get in a row for the given seed.\n\ncount_heads &lt;- function(seed)\n{\n  set.seed(seed)\n\n  # flip 100 \"coins\"\n  heads &lt;- rbinom(100, 1, 0.5) |&gt;\n    cumsum() \n\n  # see how many heads we get in a row after setting the seed\n  which(heads[-1] == heads[-100]) |&gt;\n    min()\n}\n\nLoop over all seeds and see which one gives us the best result.\n\nfor(i in seeds)\n{\n  nheads &lt;- count_heads(i)\n\n  # if nheads &gt; maxHeads, we have a new winner\n  if(nheads &gt; maxHeads)\n  {\n    maxHeads &lt;- nheads\n    bestseed &lt;- i\n  }\n}\n\nResult: Setting the seed to 2093382261 will result in 9 “heads” in a row. Need to keep looking.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#advanced-challenge",
     "href": "labs/03phacking.html#advanced-challenge",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "Advanced challenge",
     "text": "Advanced challenge\nCreate a magic coin shiny app that will allow you to identify a seed that will result in an arbitrary number of heads. I’ve given you starter code here.\n\nClone your fork to your local machine.\nComplete the app.\nPush your completed app to GitHub.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/03phacking.html#bonus-challenge",
     "href": "labs/03phacking.html#bonus-challenge",
-    "title": "4  p-hacking",
+    "title": "5  p-hacking",
     "section": "Bonus challenge",
     "text": "Bonus challenge\nFind a seed that results in more than 29 heads in a row.\n\nBounty: you may skip one assignment of your choice.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>p-hacking</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>p-hacking</span>"
     ]
   },
   {
     "objectID": "labs/04RNA-seq-data.html",
     "href": "labs/04RNA-seq-data.html",
-    "title": "5  RNA-Seq Data",
+    "title": "6  RNA-Seq Data",
     "section": "",
     "text": "Today’s Lab",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RNA-Seq Data</span>"
     ]
   },
   {
     "objectID": "labs/04RNA-seq-data.html#todays-lab",
     "href": "labs/04RNA-seq-data.html#todays-lab",
-    "title": "5  RNA-Seq Data",
+    "title": "6  RNA-Seq Data",
     "section": "",
     "text": "RNA-Seq data visualization - this lab borrows heavily from a Carpentries incubator module on visualization.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RNA-Seq Data</span>"
     ]
   },
   {
     "objectID": "labs/04RNA-seq-data.html#rna-seq-data",
     "href": "labs/04RNA-seq-data.html#rna-seq-data",
-    "title": "5  RNA-Seq Data",
+    "title": "6  RNA-Seq Data",
     "section": "RNA-Seq data",
     "text": "RNA-Seq data\nTo start out with, fork the starter code and clone the repository to your local machine. Once we have done that, let’s explore the data provided:\n\n\n# A tibble: 32,428 × 20\n   gene    sample  expression organism   age sex   infection strain  time tissue\n   &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;chr&gt;  &lt;dbl&gt; &lt;chr&gt; \n 1 Asl     GSM254…       1170 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 2 Apod    GSM254…      36194 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 3 Cyp2d22 GSM254…       4060 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 4 Klk6    GSM254…        287 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 5 Fcrls   GSM254…         85 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 6 Slc2a4  GSM254…        782 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 7 Exd2    GSM254…       1619 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 8 Gjc2    GSM254…        288 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n 9 Plp1    GSM254…      43217 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n10 Gnb4    GSM254…       1071 Mus mus…     8 Fema… Influenz… C57BL…     8 Cereb…\n# ℹ 32,418 more rows\n# ℹ 10 more variables: mouse &lt;dbl&gt;, ENTREZID &lt;dbl&gt;, product &lt;chr&gt;,\n#   ensembl_gene_id &lt;chr&gt;, external_synonym &lt;chr&gt;, chromosome_name &lt;chr&gt;,\n#   gene_biotype &lt;chr&gt;, phenotype_description &lt;chr&gt;,\n#   hsapiens_homolog_associated_gene_name &lt;chr&gt;, l2exp &lt;dbl&gt;\n\n\nTake a look at the distribution of the expression levels:\n\n\n\n\n\n\n\n\n\nYou’ll probably notice an automatic message that appears when drawing the histogram: stat_bin() using bins = 30. Pick better value with binwidth. Change the bins or binwidth arguments of geom_histogram() to change the number or width of the bins.\nThe data should be transformed. Transforming on the \\(\\log_{10}\\) scale is easy in ggplot2,\n\n\n\n\n\n\n\n\n\nbut we often use a \\(log_2\\) scale when looking at expression data:",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RNA-Seq Data</span>"
     ]
   },
   {
     "objectID": "labs/04RNA-seq-data.html#building-plots-iteratively",
     "href": "labs/04RNA-seq-data.html#building-plots-iteratively",
-    "title": "5  RNA-Seq Data",
+    "title": "6  RNA-Seq Data",
     "section": "Building plots iteratively",
     "text": "Building plots iteratively\nWe will now draw a scatter plot with two continuous variables and the geom_point() function. This graph will represent the \\(\\log_2\\) fold changes of expression comparing time 8 versus time 0, and time 4 versus time 0. To this end, we first need to compute the means of the log-transformed expression values by gene and time, then the log fold changes by subtracting the mean log expressions between time 8 and time 0 and between time 4 and time 0.\n\n\n\n\n\n\n\n\n\nWe could also add color, but it begins to get a little messy with the large number of categories we have.\n\n\n\n\n\n\n\n\n\nOver-plotting can be an issue with large datasets like this. One solution is using hexbin:geom_hex().",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RNA-Seq Data</span>"
     ]
   },
   {
     "objectID": "labs/04RNA-seq-data.html#box-plots",
     "href": "labs/04RNA-seq-data.html#box-plots",
-    "title": "5  RNA-Seq Data",
+    "title": "6  RNA-Seq Data",
     "section": "Box plots",
     "text": "Box plots\nWe can use boxplots to visualize the distribution of gene expressions within each sample:\n\n\n\n\n\n\n\n\n\nAdding points to box plots can give us a better understanding of the underlying distributions.\n\n\n\n\n\n\n\n\n\nWe could also use geom_violin to better see the distribution of points. Try coloring the points by time as well.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RNA-Seq Data</span>"
     ]
   },
   {
     "objectID": "labs/04RNA-seq-data.html#line-plots",
     "href": "labs/04RNA-seq-data.html#line-plots",
-    "title": "5  RNA-Seq Data",
+    "title": "6  RNA-Seq Data",
     "section": "Line plots",
     "text": "Line plots\nLet’s calculate the mean expression per duration of the infection for the 10 genes having the highest log fold changes comparing time 8 versus time 0. We can do this either by coloring each gene or using facet_wrap.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNow we would like to split the line in each plot by the sex of the mice.\n\n\n\n\n\n\n\n\n\nLet’s do something similar and create a plot that depicts how the average expression of each chromosome changes through the duration of infection.\n\n\n\n\n\n\n\n\n\nThe facet_wrap geometry extracts plots into an arbitrary number of dimensions to allow them to cleanly fit on one page. On the other hand, the facet_grid geometry allows you to explicitly specify how you want your plots to be arranged via formula notation (rows ~ columns; a . can be used as a placeholder that indicates only one row or column).\nLet’s modify the previous plot to compare how the mean gene expression of males and females has changed through time:",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>RNA-Seq Data</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>RNA-Seq Data</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html",
     "href": "labs/05COVID.html",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "",
     "text": "Today’s lab",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html#todays-lab",
     "href": "labs/05COVID.html#todays-lab",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "",
     "text": "Review of Canine Confounders\nPractice visualization using ggplot2",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html#canine-confounders",
     "href": "labs/05COVID.html#canine-confounders",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "Canine confounders",
     "text": "Canine confounders\nWe’ll be using a COVID-19 dataset from Mexico City that was featured in an article in Significance Magazine titled Canine Confounders (Núñez 2022).\nWhat is presented here is intentionally rough and open ended. After filling in the missing details in the starter code, what other questions might you have? What other tests and/or visualizations might be interesting?\nLet’s start by looking at the primary effects of different risk factors and confounders on mortality.\n\n\n\n\n\nfactor\nOR\np_OR\nHR\np_HR\n\n\n\n\nAntivirals\n1.15\n0.01179\n1.15\n0.00108901\n\n\nDiabetes\n1.60\n&lt; 2.22e-16\n1.48\n&lt; 2.22e-16\n\n\nHyptertension\n1.80\n&lt; 2.22e-16\n1.61\n&lt; 2.22e-16\n\n\nObesity\n1.38\n&lt; 2.22e-16\n1.21\n5.1218e-15\n\n\nAge &gt; 65\n2.74\n&lt; 2.22e-16\n2.33\n&lt; 2.22e-16\n\n\nSex (male)\n1.39\n&lt; 2.22e-16\n1.27\n&lt; 2.22e-16\n\n\nPrivate Sector\n0.40\n&lt; 2.22e-16\n0.28\n&lt; 2.22e-16\n\n\nDog ownership\n1.51\n4.1337e-08\n1.25\n0.00090071",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html#covid-survival",
     "href": "labs/05COVID.html#covid-survival",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "COVID Survival",
     "text": "COVID Survival\nHere are Kaplan-Meier plots for our risk factors and confounders.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html#missingness",
     "href": "labs/05COVID.html#missingness",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "Missingness",
     "text": "Missingness\nLets take a look at the missing rate of dog ownership by the hospital they were admitted to.\n\n\n\n\n\n\nMissing\nFALSE\nTRUE\n\n\n\n\nCRUZ ROJA\n6\n0\n0\n\n\nESTATAL\n23\n12\n0\n\n\nIMSS\n16306\n1\n1\n\n\nIMSS-OPORTUNIDADES\n1\n0\n0\n\n\nISSSTE\n2077\n1495\n363\n\n\nPEMEX\n465\n263\n1\n\n\nPRIVADA\n796\n614\n84\n\n\nSEDENA\n608\n277\n17\n\n\nSEMAR\n16\n1\n1\n\n\nSSA\n5580\n2463\n440\n\n\nUNIVERSITARIO\n1\n0\n0\n\n\n\n\n\nAfter removing a few sectors that don’t have much data, let’s look at this graphically over time.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html#dog-ownership-and-missingness-by-sector-bias",
     "href": "labs/05COVID.html#dog-ownership-and-missingness-by-sector-bias",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "Dog ownership and missingness by sector: Bias",
     "text": "Dog ownership and missingness by sector: Bias\nHow does the risk of death change by sector, compared to the private sector?\n\n\n\nCall:\nglm(formula = death_intubation ~ sector, family = binomial, data = .)\n\nCoefficients:\n             Estimate Std. Error z value Pr(&gt;|z|)    \n(Intercept)  -1.38128    0.06458 -21.388  &lt; 2e-16 ***\nsectorSSA     0.73377    0.06851  10.710  &lt; 2e-16 ***\nsectorIMSS    1.15267    0.06648  17.339  &lt; 2e-16 ***\nsectorISSSTE  0.36665    0.07397   4.956 7.18e-07 ***\nsectorPEMEX   0.85653    0.10022   8.546  &lt; 2e-16 ***\nsectorSEDENA  0.62934    0.09624   6.539 6.18e-11 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\n(Dispersion parameter for binomial family taken to be 1)\n\n    Null deviance: 42246  on 31849  degrees of freedom\nResidual deviance: 41461  on 31844  degrees of freedom\n  (1 observation deleted due to missingness)\nAIC: 41473\n\nNumber of Fisher Scoring iterations: 4",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/05COVID.html#references",
     "href": "labs/05COVID.html#references",
-    "title": "6  Canine Confounders",
+    "title": "7  Canine Confounders",
     "section": "References",
     "text": "References\n\n\n\n\nNúñez, Isaac. 2022. “Canine Confounders.” Significance 19 (4): 24–27.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Canine Confounders</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Canine Confounders</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html",
     "href": "labs/06Antibiotics-under-our-feet.html",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "",
     "text": "Today’s lab",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html#todays-lab",
     "href": "labs/06Antibiotics-under-our-feet.html#todays-lab",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "",
-    "text": "Review of the AUOF dataset\nCean up the dataset\nExploratory data analysis",
+    "text": "Review of the AUOF dataset\nClean up the dataset\nExploratory data analysis",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html#auof-dataset",
     "href": "labs/06Antibiotics-under-our-feet.html#auof-dataset",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "AUOF dataset",
-    "text": "AUOF dataset\nThe dataset we will be using comes from a study called Antibiotics Under Our Feet1. It has been shared on figshare.\nThe dataset contains information on microbes found in six soil samples.\n\nTaxonomy\nAssociated diseases\nAntibiotic resistance\nMethod of action of the antibiotics\nWhether the microbe was observed in the soil samples",
+    "text": "AUOF dataset\nThe dataset we will be using comes from a study called Antibiotics Under Our Feet1. It has been shared on figshare. Starter code can be accessed here\nThe dataset contains information on microbes found in six soil samples.\n\nTaxonomy\nAssociated diseases\nAntibiotic resistance\nMethod of action of the antibiotics\nWhether the microbe was observed in the soil samples",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html#data-summary",
     "href": "labs/06Antibiotics-under-our-feet.html#data-summary",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "Data summary",
     "text": "Data summary\n\n\n\nNumber of microbes with documented antimicrobial resistance that were targetd by this study, grouped by antimicrobial action, and the number of microbes found in study samples.\n\n\nAction\nNumber of Microbes\nObserved\n\n\n\n\nCell wall disruption\n9\n8\n\n\nDNA interactions\n4\n3\n\n\nErgosterol inhibition\n6\n0\n\n\nGlucan inhibition\n15\n0\n\n\nOther\n3\n1\n\n\nPBP\n8\n5\n\n\nPeptidoglycan inhibition\n9\n7\n\n\nTranslation disruption\n7\n4",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html#phyla",
     "href": "labs/06Antibiotics-under-our-feet.html#phyla",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "Phyla",
     "text": "Phyla",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html#classes",
     "href": "labs/06Antibiotics-under-our-feet.html#classes",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "Classes",
     "text": "Classes",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/06Antibiotics-under-our-feet.html#footnotes",
     "href": "labs/06Antibiotics-under-our-feet.html#footnotes",
-    "title": "7  Antibiotics Under Our Feet",
+    "title": "8  Antibiotics Under Our Feet",
     "section": "",
     "text": "Gul, Anum; Mackenzie, Dylan; Shahid, Aleena; Tawfeeq, Tawfeeq; Cornwell, Rebecca; Czekster, Clarissa Melo (2023). Antibiotics under our feet: investigating antimicrobial resistance (Scotland). figshare. Dataset. https://doi.org/10.6084/m9.figshare.23770230.v1↩︎",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Antibiotics Under Our Feet</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html",
     "href": "labs/07HWE.html",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "",
     "text": "Today’s lab",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#todays-lab",
     "href": "labs/07HWE.html#todays-lab",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "",
     "text": "Review of Hardy-Weinberg equilibrium\nPopulation genetics simulation",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#hardy-weinberg-equilibrium",
     "href": "labs/07HWE.html#hardy-weinberg-equilibrium",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "Hardy-Weinberg Equilibrium",
     "text": "Hardy-Weinberg Equilibrium\nHardy-Weinberg equilibrium (HWE) is a principle in population genetics that describes a state of genetic stability in a population. It predicts that, under certain ideal conditions, the frequencies of genotypes are dependent on allele frequencies and will remain constant across generations.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#hwe-assumptions",
     "href": "labs/07HWE.html#hwe-assumptions",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "HWE assumptions",
     "text": "HWE assumptions\nThe Hardy-Weinberg equilibrium assumes the following:\n\nLarge population size\nRandom mating\nNo mutation\nNo migration\nNo natural selection\n\nIn human populations, these assumptions are rarely met, but the HWE model provides a useful baseline and is actually quite robust in practice.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#hwe-equation",
     "href": "labs/07HWE.html#hwe-equation",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "HWE equation",
     "text": "HWE equation\nGiven two alleles, A and B, with frequencies \\(p\\) and \\(q\\), respectively, a population in Hardy-Weinberg equilibrium will have the following genotype frequencies:\n\n\\(p^2\\) = frequency of the homozygous dominant genotype (AA)\n\\(2pq\\) = frequency of the heterozygous genotype (AB)\n\\(q^2\\) = frequency of the homozygous recessive genotype (BB)\n\nThe Hardy-Weinberg equation can be derived from looking at all possible matings. For example for two heterozygous parents, the probability of each genotype in the offspring is as follows:\n\n\n\n\n\n\nA\nB\n\n\n\n\nA\nP(AA) = 0.25\nP(AB) = 0.25\n\n\nB\nP(AB) = 0.25\nP(BB) = 0.25\n\n\n\n\n\nWhen you sum the probabilities of each genotype, conditional on the frequency of parent genotypes in the population,\n\\[\n\\sum P(genotype_{f1} | genotype_{f0}) = 1,\n\\]\nyou get the Hardy-Weinberg equation:\n\\[\np^2 + 2pq + q^2 = 1\n\\]",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#population-genetics-simulation",
     "href": "labs/07HWE.html#population-genetics-simulation",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "Population genetics simulation",
-    "text": "Population genetics simulation\nWe will use a simulation to explore Hardy-Weinberg equilibrium. To this end, we need to define the following data structures and functions:\n\n#' gen\n#' A generation of individuals\n#' @format A list with the following fields:\n#' @field genos A vector of genotypes, one for each individual in the \n#'   population, with 0, 1, and 2 representing genotypes AA, AB, and BB\n#' @field p The observed frequency of allele A\n#' @field q The observed frequency of allele B\n#' @field pAA The observed frequency of genotype AA\n#' @field pAB The observed frequency of genotype AB\n#' @field pBB The observed frequency of genotype BB\n\n#' gen_list\n#' A list of generations\n#' @format A list of `gen` objects, one for each successive generation\n\n\n#' gen0\n#' Generate the initial population\n#' @param n Number of individuals\n#' @param p Frequency of allele A (frequency of B is assumed to be 1 - p)\n#' @return A `gen_list` object of length 1 containing the initial generation\n\n\n#' next_gen\n#' Generate the next generation\n#' @param gen_prev A `gen_list` object containing previous generations (at\n#'   least one)\n#' @param n Number of individuals to simulate in the next generation\n#' @param p Frequency of allele A (frequency of B is assumed to be 1 - p)\n#' @details Individuals of the most recent generation will be randomly \n#'   sorted and paired to generate the next generation. Offspring will be\n#'   generated by randomly selecting a pair of parents, generating a single\n#'   offspring, and repeating this process until the desired number of\n#'   offspring is reached.\n#' @return A `gen_list` object of length `length(gen_prev) + 1` including \n#'   `gen_prev` and the newly simulated generation.\n\n\n#' plot_gen_list\n#' Plot the allele and genotype frequencies of a `gen_list` object\n#' @param gen_list A `gen_list` object\n#' @return A ggplot object",
+    "text": "Population genetics simulation\nWe will use a simulation to explore Hardy-Weinberg equilibrium. To this end, we need to define the following data structures and functions:\n\n#' gens\n#' Data on multiple generations of individuals\n#' @format A tibble where each row represents a subsequent generation \n#'   including the following fields:\n#' @field sim A numeric vector indicating the simulation number\n#' @field generation A numeric vector indicating the generation number\n#' @field genos A list of genotypes with one vector of genotypes per \n#'   generation. Each value in a vector represents an individual in the \n#'   population, with 0, 1, and 2 representing genotypes AA, AB, and BB\n#' @field n A numeric vector indicating the population size.\n#' @field p A numeric vector with observed allele frequencies of A.\n#' @field q A numeric vector with with observed frequencies of B.\n#' @field pAA A numeric vector with observed frequencies of genotype AA.\n#' @field pAB A numeric vector with observed frequencies of genotype AB.\n#' @field pBB A numeric vector with observed frequencies of genotype BB.\n\n\n#' gen0\n#' Generate the initial population\n#' @param n Number of individuals to simulate in the next generation\n#' @param p Allele frequency of allele A\n#' @param sim Simulation number\n#' @details The returned `gens` object only has one row, containing the\n#'   initial generation\n#' @return A `gens` object containing simulated population.\n\n\n#' next_gen\n#' Generate the next generation\n#' @param genos A vector of genotypes containing previous generations \n#'   (e.g. `gen_prev[[1]]$genos`)\n#' @param n Number of individuals to simulate in the next generation\n#' @param generation Generation number\n#' @param sim Simulation number\n#' @param mating_fun A function to pair up parents for mating\n#' @details Individuals in `genos` will be randomly sorted and paired to\n#'   generate the next generation. Offspring will be generated by randomly\n#'   selecting a pair of parents, generating a single offspring, and \n#'   repeating this process until the desired number of offspring is reached.\n#' @return A `gens` object containing simulated population.\n\n\n#' sim_gens\n#' Simulate multiple generations\n#' @param n Number of individuals to simulate in the next generation\n#' @param p Allele frequency of allele A\n#' @param nsims Number of populations / simulations to run\n#' @param mating_fun A function to pair up parents for mating\n#' @param state An existing population to build from (i.e. skipping \n#'   the simulation of an initial generation)\n#' @description This function simulates multiple generations of a population\n#'   and includes the option to start from an existing `gens` object.\n#' @return A `gens` object containing simulated population(s).\n\n\n#' plot_allele_by_gen\n#' Plot the allele frequencies of a `gens` object\n#' @param gens A `gens` object\n#' @return A ggplot object",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#primary-tasks",
     "href": "labs/07HWE.html#primary-tasks",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "Primary tasks",
     "text": "Primary tasks\n\nInitialize your group’s repository with the provided template.\n\n\nImplement the functions gen0, next_gen, and plot_gen_list in R.\n\nEach student pick a different function to implement.\nA sample gen_list object is included with the template.\nWork together to test the functions.\n\nCreate a README file using Quarto with documentation:\n\nUse format: \"gfm\" in the YAML header.\nDescribe the use and purpose of the functions.\nProvide examples of how to use the functions.\n\n\n\nCommit and push your changes to the GitHub.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
     ]
   },
   {
     "objectID": "labs/07HWE.html#secondary-tasks",
     "href": "labs/07HWE.html#secondary-tasks",
-    "title": "8  Population genetics simulation",
+    "title": "9  Population genetics simulation",
     "section": "Secondary tasks",
-    "text": "Secondary tasks\n\nAdd the following to your README file (some of these may require changes to your functions):\n\nA brief description of the assumptions of the HWE model.\nA simulation of the consequences of departures from HWE.\n\nEach group will pick a different assumption to simulate.\nComplete as many assumptions as time allows.",
+    "text": "Secondary tasks\n\nAdd the following to your README file (some of these may require changes to your functions):\n\nA brief description of the assumptions of the HWE model.\nA simulation of the consequences of departures from HWE.\n\nEach group will pick a different assumption to simulate.\nAddress as many assumptions as time allows.\n\n\n\n\n\n\n\n\n\nPair mutation and selection assumptions\n\n\n\nOne group may want to pair violations of both the mutation and selection assumptions. This will require a more complex simulation, but it will provide a more complete picture of the consequences of these departures from HWE.",
     "crumbs": [
       "Labs",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Population genetics simulation</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Population genetics simulation</span>"
+    ]
+  },
+  {
+    "objectID": "labs/08Command-line-practice.html",
+    "href": "labs/08Command-line-practice.html",
+    "title": "10  Command Line Practice",
+    "section": "",
+    "text": "Today’s lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Command Line Practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/08Command-line-practice.html#todays-lab",
+    "href": "labs/08Command-line-practice.html#todays-lab",
+    "title": "10  Command Line Practice",
+    "section": "",
+    "text": "Practice command line skills needed develop code on multiple computers / locations, including:\n\nYour laptop\nThe Hood cluster\nGitHub.com",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Command Line Practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/08Command-line-practice.html#set-up",
+    "href": "labs/08Command-line-practice.html#set-up",
+    "title": "10  Command Line Practice",
+    "section": "Set up",
+    "text": "Set up\n\nLog into the Hood cluster and change your password using the passwd command.\nCreate a repository on GitHub with and initialize with a README. Save this repository under the BIFX552-24 organization.\nClone your new repository to the Hood cluster and to your laptop.\n\n\nOn your laptop, write an R script that creates a figure.\n\nSimulate a data set using the following code: dat &lt;- tibble(x = rnorm(100), y = x + rnorm(100, sd = 0.2))\nPlot x vs y with a trend line.\n\nPush your changes to GitHub and pull them down onto the cluster.\nOn the cluster, run the code and save the generated image to a png file.\n\n\nPush your code and figure to GitHub.\nPull the updates down to your laptop and add a few comments about the repository to the README.\nPush the updated readme to GitHub and pull it down to the cluster.\nSubmit a link to your repository on Blackboard.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Command Line Practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/09Docker.html",
+    "href": "labs/09Docker.html",
+    "title": "11  Docker Practice",
+    "section": "",
+    "text": "Today’s lab",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Docker Practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/09Docker.html#todays-lab",
+    "href": "labs/09Docker.html#todays-lab",
+    "title": "11  Docker Practice",
+    "section": "",
+    "text": "Compose a Docker container that could be used for the variant calling modules you will be working with this week.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Docker Practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/09Docker.html#docker-composition",
+    "href": "labs/09Docker.html#docker-composition",
+    "title": "11  Docker Practice",
+    "section": "Docker composition",
+    "text": "Docker composition\n\nCreate a git repository for your Docker container and clone it to your laptop. Create the following in your cloned repository:\n\n\nAn RStudio project\n.gitignore\nDockerfile\n\n\nStart up a Docker container with Ubuntu:\n\ndocker run -it ubuntu bash\n\nOpen your Dockerfile and start with the following header:\n\n# Dockerfile for variant-calling\n\n# start with Ubuntu\nFROM ubuntu\n\n# install dependencies\nRUN apt-get update && apt-get install -y \\\n\nVerify that the following commands will run inside of your running Ubuntu container. Copy all commands you run to your Dockerfile to document what you have done. (Add any needed dependencies while you are at it.)\n\n\nInstall miniconda\n\nwget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh\nmkdir ~/miniconda3\nbash Miniconda3-latest-Linux-x86_64.sh -b -u -p ~/miniconda3\n~/miniconda3/bin/conda init bash\nrm /Miniconda3-latest-Linux-x86_64.sh\n\nInstall software\n\n~/miniconda3/bin/conda install -c bioconda fastqc -y\n~/miniconda3/bin/conda install -c bioconda trimmomatic -y\n~/miniconda3/bin/conda install -c bioconda bwa -y\n~/miniconda3/bin/conda install -c bioconda samtools -y\n~/miniconda3/bin/conda install -c bioconda bcftools -y\n\n\n\nExit from your container and start it back up in the Docker dashboard. Start up a commandline session in your terminal with the following command (where name-of-container is the name of your container in Docker dashboard - mine was “heuristic_driscoll” when I was testing this):\n\n# get name of container (or look in Docker Desktop)\ndocker ps -a\n\n# start up bash\ndocker exec -it name-of-container bash\n\nVerify that everything was properly installed, and add this closing statement to your Dockerfile:\n\n# start with bash\nCMD [\"/bin/sh\", \"-c\", \"exec bash\"]\n\nRunning with Singularity\nIf you are unable to install Docker Desktop on your local computer, you can complete this exercise using Singularity on the cluster.\n\nCreate and clone the repository to the cluster as described in step 1 above.\nStart up an Ubuntu VM on the cluster with the following command:\n\n\n# log into CN001\nsrun --pty bash\n\n# start up the container\nsingularity run -w -f docker://ubuntu:latest\n\nFollow step 3 as described above.\nFollow step 4 as described above.\nskip this step for now\nFollow step 6 as described above.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Docker Practice</span>"
+    ]
+  },
+  {
+    "objectID": "labs/10Variant-calling-pipeline.html",
+    "href": "labs/10Variant-calling-pipeline.html",
+    "title": "12  Variant Calling Pipeline",
+    "section": "",
+    "text": "Today’s Lab\nDuring the next two classes we will create a Snakemake pipeline following the workflow outlined in the Variant Calling Workflow lesson from this week. Start with this empty repository.",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Variant Calling Pipeline</span>"
+    ]
+  },
+  {
+    "objectID": "labs/10Variant-calling-pipeline.html#setup",
+    "href": "labs/10Variant-calling-pipeline.html#setup",
+    "title": "12  Variant Calling Pipeline",
+    "section": "Setup",
+    "text": "Setup\n\nAccept the assignment from GitHub Classroom.\nClone the repository to the Hood cluster.\n\n\n\n\n\n\n\nNote\n\n\n\nBe sure to start a job on the cluster with:\nsrun --pty bash",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Variant Calling Pipeline</span>"
+    ]
+  },
+  {
+    "objectID": "labs/10Variant-calling-pipeline.html#variant-calling-workflow",
+    "href": "labs/10Variant-calling-pipeline.html#variant-calling-workflow",
+    "title": "12  Variant Calling Pipeline",
+    "section": "Variant Calling Workflow",
+    "text": "Variant Calling Workflow\nThe specific commands we would need to execute for the SRR2584863 sample follow. We will use these commands to create a Snakemake pipeline.\n\nStarting working directory\n\ncd ~/Ecoli\n\n\n\nTrimming\n\ntrimmomatic PE -threads 1 untrimmed_fastq/SRR2584863_1.fastq.gz untrimmed_fastq/SRR2584863_2.fastq.gz trimmed_fastq/SRR2584863_1.trimmed.fastq trimmed_fastq/SRR2584863_1un.trimmed.fastq trimmed_fastq/SRR2584863_2.trimmed.fastq trimmed_fastq/SRR2584863_2un.trimmed.fastq SLIDINGWINDOW:4:20 MINLEN:25 ILLUMINACLIP:untrimmed_fastq/NexteraPE-PE.fa:2:40:15\n\n\n\nQuality control checks\n\nfastqc -o qc trimmed_fastq/SRR2584863_1.fastq.gz\nfastqc -o qc trimmed_fastq/SRR2584863_2.fastq.gz\nPrint any warnings and errors to qc/SRR2584863_1.warnings, qc/SRR2584863_1.errors, etc.\n\n\n\nAlign reads to reference genome (use the trimmed_fastq_small directory during lab)\n\nbwa mem data/ecoli_rel606.fasta data/trimmed_fastq/SRR2584863_1.trimmed.fastq data/trimmed_fastq_small/SRR2584863_2.trimmed.fastq &gt; results/sam/SRR2584863.aligned.sam\n\n\n\nConvert to BAM file\n\nsamtools view -S -b results/sam/SRR2584863.aligned.sam &gt; results/bam/SRR2584863.aligned.bam\n\n\n\nSort BAM file\n\nsamtools sort -o results/bam/SRR2584863.aligned.sorted.bam results/bam/SRR2584863.aligned.bam\n\n\n\nCalculate read coverage\n\nbcftools mpileup -O b -o results/bcf/SRR2584863_raw.bcf -f data/ecoli_rel606.fasta results/bam/SRR2584863.aligned.sorted.bam\n\n\n\nDetect SNVs\n\nbcftools call --ploidy 1 -m -v -o results/vcf/SRR2584863_variants.vcf results/bcf/SRR2584863_raw.bcf\n\n\n\nFilter SNVs\n\nvcfutils.pl varFilter results/vcf/SRR2584863_variants.vcf &gt; results/vcf/SRR2584863_final_variants.vcf",
+    "crumbs": [
+      "Labs",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Variant Calling Pipeline</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H01git.html",
+    "href": "hw/H01git.html",
+    "title": "13  Git",
+    "section": "",
+    "text": "Instructions\nWatch the videos linked below, follow along with the exercises, and submit a link to your toyPipeline repository from GitHub.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H01git.html#instructions",
+    "href": "hw/H01git.html#instructions",
+    "title": "13  Git",
+    "section": "",
+    "text": "Intro to learning git\nVersion control with git\ngit config\ngit init",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H01git.html#grading",
+    "href": "hw/H01git.html#grading",
+    "title": "13  Git",
+    "section": "Grading",
+    "text": "Grading\n\nFor full credit\n\nSubmit your repository on time.\nYour repository should contain:\n\nMultiple commits\nAt least one conflict\nA .gitignore file.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Git</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H02Intro-to-R.html",
+    "href": "hw/H02Intro-to-R.html",
+    "title": "14  Intro to R",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Intro to R</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H02Intro-to-R.html#instructions",
+    "href": "hw/H02Intro-to-R.html#instructions",
+    "title": "14  Intro to R",
+    "section": "",
+    "text": "Fork Learning-R\nView Intro to Learning-R and complete modules 1-3\n\nIntro to RStudio\nProject management with RStudio\nSeeking help\n\nPush your work to GitHub\nSubmit a link to your progress page on Blackboard to let me know you are finished with this week’s materials.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Intro to R</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H02Intro-to-R.html#grading",
+    "href": "hw/H02Intro-to-R.html#grading",
+    "title": "14  Intro to R",
+    "section": "Grading",
+    "text": "Grading\nFor full credit:\n\nSubmit your work on time\nYour fork of the Learning-R repository should have entries with no errors on your progress page for modules 1-3",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Intro to R</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H03R-basics.html",
+    "href": "hw/H03R-basics.html",
+    "title": "15  R Basics",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>R Basics</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H03R-basics.html#instructions",
+    "href": "hw/H03R-basics.html#instructions",
+    "title": "15  R Basics",
+    "section": "",
+    "text": "Complete modules 4-6 of Learning-R\n\nData structures\nExploring data frames\nSubsetting data\n\nPush your work to GitHub\nSubmit a link to your progress page on Blackboard to let me know you are finished with this week’s materials.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>R Basics</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H03R-basics.html#grading",
+    "href": "hw/H03R-basics.html#grading",
+    "title": "15  R Basics",
+    "section": "Grading",
+    "text": "Grading\nFor full credit:\n\nSubmit your work on time\nYour fork of the Learning-R repository should have entries with no errors on your progress page for modules 4-6",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>R Basics</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H04R-programming-graphics.html",
+    "href": "hw/H04R-programming-graphics.html",
+    "title": "16  R Programming & Graphics",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>R Programming & Graphics</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H04R-programming-graphics.html#instructions",
+    "href": "hw/H04R-programming-graphics.html#instructions",
+    "title": "16  R Programming & Graphics",
+    "section": "",
+    "text": "Complete modules 7-9 of Learning-R\n\nFlow control\nggplot2\nVectorization\n\nPush your work to GitHub\nSubmit a link to your progress page on Blackboard to let me know you are finished with this week’s materials.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>R Programming & Graphics</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H04R-programming-graphics.html#grading",
+    "href": "hw/H04R-programming-graphics.html#grading",
+    "title": "16  R Programming & Graphics",
+    "section": "Grading",
+    "text": "Grading\nFor full credit:\n\nSubmit your work on time\nYour fork of the Learning-R repository should have entries with no errors on your progress page for modules 7-9",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>R Programming & Graphics</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H05R-advanced-data.html",
+    "href": "hw/H05R-advanced-data.html",
+    "title": "17  R Advanced Data",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>R Advanced Data</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H05R-advanced-data.html#instructions",
+    "href": "hw/H05R-advanced-data.html#instructions",
+    "title": "17  R Advanced Data",
+    "section": "",
+    "text": "Complete modules 10-12 of Learning-R\n\nFunctions\nWriting data\ndplyr\n\nPush your work to GitHub\nSubmit a link to your progress page on Blackboard to let me know you are finished with this week’s materials.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>R Advanced Data</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H05R-advanced-data.html#grading",
+    "href": "hw/H05R-advanced-data.html#grading",
+    "title": "17  R Advanced Data",
+    "section": "Grading",
+    "text": "Grading\nFor full credit:\n\nSubmit your work on time\nYour fork of the Learning-R repository should have entries with no errors on your progress page for modules 10-12",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>R Advanced Data</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H06R-tables-tips.html",
+    "href": "hw/H06R-tables-tips.html",
+    "title": "18  R Joining Tables & Software Tips",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>R Joining Tables & Software Tips</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H06R-tables-tips.html#instructions",
+    "href": "hw/H06R-tables-tips.html#instructions",
+    "title": "18  R Joining Tables & Software Tips",
+    "section": "",
+    "text": "Complete modules 13-15 of Learning-R\n\ntidyr\nJoining tables\nWriting good software\n\nPush your work to GitHub\nSubmit a link to your progress page on Blackboard to let me know you are finished with this week’s materials.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>R Joining Tables & Software Tips</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H06R-tables-tips.html#grading",
+    "href": "hw/H06R-tables-tips.html#grading",
+    "title": "18  R Joining Tables & Software Tips",
+    "section": "Grading",
+    "text": "Grading\nFor full credit:\n\nSubmit your work on time\nYour fork of the Learning-R repository should have entries with no errors on your progress page for modules 13-15",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>R Joining Tables & Software Tips</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H07Unix.html",
+    "href": "hw/H07Unix.html",
+    "title": "19  Unix Shell",
+    "section": "",
+    "text": "Instructions\nFork the Learning-unix repository and run UnixShell.Rmd from RStudio. This will start up a learnr tutorial with links to the tutorial videos and questions to answer as you follow along.\nThis is the first asynchronous tutorial following this format. Your answers will automatically be sent when you complete the tutorial. For submission please let me know what you think about this format and if you have any suggestions for improvement.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Unix Shell</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H07Unix.html#grading",
+    "href": "hw/H07Unix.html#grading",
+    "title": "19  Unix Shell",
+    "section": "Grading",
+    "text": "Grading\n\nFor full credit\n\nComplete the tutorial on time\nAnswer all questions correctly",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Unix Shell</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H08Snakemake.html",
+    "href": "hw/H08Snakemake.html",
+    "title": "20  Snakemake",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Snakemake</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H08Snakemake.html#instructions",
+    "href": "hw/H08Snakemake.html#instructions",
+    "title": "20  Snakemake",
+    "section": "",
+    "text": "Create a new Snakemake repository here.\nAdd the following files to your repository:\n\nREAME.md - Include a title and a sentence or two describing your repository.\nSnakefile - This should have the four rules covered in the videos below. In the last video we will modify the trimreads rule. You may choose to use either cutoff (20 or 22).\n\nIntro to Snakemake videos:\n\nSetup (also see setup notes below)\nRunning commands with Snakemake\nPlaceholders and wildcards\nChaining rules\nHow Snakemake plans what jobs to run\n\nPost a link to your repository here on Blackboard.\n\n\nSetup\nYou will need a terminal again for this lesson, along with some software. As with last week’s lesson, you have a few options on how to proceed. You only need to pick one option - I would recommend either the Docker or Hood cluster options.\n\nDocker\nYou may use Docker if you would like. The command for starting up Docker is\ndocker run -it --rm --mount type=bind,source=\"$(pwd)\",target=/root/loc johnsonra/snakemake\nIf that doesn’t work (Windows computers may not like the $(pwd) part of the command), specify the entire path to the location of your repository on your laptop:\ndocker run -it --rm --mount type=bind,source=\"C:\\Path\\to\\your\\repository\",target=/root/loc johnsonra/snakemake\nThe videos recommend using the --rm tag. I’ll be revising that convention in the videos for Advanced Snakemake to reuse an existing container as we did in class this week. You may do that for this lesson as well if you are comfortable with deviating from the videos a little. Otherwise you can stick with the videos.\n\n\n\nHood cluster\nIf you choose to work on the Hood cluster (see login instructions), you may need to run the following commands to set up your environment.\n\nRun this command one time, log out and then connect again:\n\n/BIODATA/programs/mambaforge/bin/conda init bash\n\nRun this command every time you log in when you want to use Snakemake:\n\n/BIODATA/programs/mambaforge/bin/conda activate snakemake_carpentry\n\n\nLocal installation\nIf you would like to work locally, you may follow these setup instructions provided by the Software Carpentry authors.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Snakemake</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H08Snakemake.html#grading",
+    "href": "hw/H08Snakemake.html#grading",
+    "title": "20  Snakemake",
+    "section": "Grading",
+    "text": "Grading\n\nFor full credit\n\nThe exercises are completed on time and pushed to GitHub\nThe README.md file is present\nThe Snakefile is present and includes the four rules covered in the videos",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Snakemake</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H09VariantCalling.html",
+    "href": "hw/H09VariantCalling.html",
+    "title": "21  Variant Calling",
+    "section": "",
+    "text": "Instructions\nFill out the Quarto document, variant-calling.qmd in this repository while completing the lesson on data wrangling for genomics and submit the generated Word document here.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Variant Calling</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H09VariantCalling.html#instructions",
+    "href": "hw/H09VariantCalling.html#instructions",
+    "title": "21  Variant Calling",
+    "section": "",
+    "text": "Videos\n\nBackground and Metadata\nQuality Control\nTrimming and Filtering\nVariant Calling\n\n\n\nSetup\nFor this lesson, I recommend working on the cluster. Rather than copy the 1+ GB directory with the data for this lesson a bunch of times (once for each person), we’ll create a symbolic link to the data and copy over the bits that we will be modifying ourselves. Navigate to your home directory and do the following:\n```{bash}\n# go home\ncd ~\n\n# create a new `Ecoli` directory\nmkdir Ecoli\ncd Ecoli\n\n# create directories that we will be working with\nmkdir results\nmkdir scripts\nmkdir trimmed_fastq\n\n# link new data directories to your directory\nln -s /BIODATA/BIFX552/Ecoli/Ecoli_metadata_composite.csv .\nln -s /BIODATA/BIFX552/Ecoli/data .\nln -s /BIODATA/BIFX552/Ecoli/untrimmed_fastq .\n```\nShould the cluster become unavailable or if you want to work locally (e.g. on your laptop), you can use the Docker container we set up in class or follow the instructions here to get your environment set up.",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Variant Calling</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H09VariantCalling.html#grading",
+    "href": "hw/H09VariantCalling.html#grading",
+    "title": "21  Variant Calling",
+    "section": "Grading",
+    "text": "Grading\n\nFor full credit\n\nWord document is subbmitted on time\nAll questions are answered",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Variant Calling</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H10AdvancedSnakemake.html",
+    "href": "hw/H10AdvancedSnakemake.html",
+    "title": "22  Snakemake",
+    "section": "",
+    "text": "Instructions",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Snakemake</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H10AdvancedSnakemake.html#instructions",
+    "href": "hw/H10AdvancedSnakemake.html#instructions",
+    "title": "22  Snakemake",
+    "section": "",
+    "text": "For this week’s lessons, continue where you left off with the same repository you used for the Intro to Snakemake modules a couple of weeks back.\nFollow along with these videos and post a link to your updated repository here.\n\nProcessing lists of inputs\nHandling awkward programs\nFinishing the basic workflow\nConfiguring workflows",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Snakemake</span>"
+    ]
+  },
+  {
+    "objectID": "hw/H10AdvancedSnakemake.html#grading",
+    "href": "hw/H10AdvancedSnakemake.html#grading",
+    "title": "22  Snakemake",
+    "section": "Grading",
+    "text": "Grading\n\nFor full credit\n\nThe exercises are completed on time and pushed to GitHub",
+    "crumbs": [
+      "Asynchronous Content",
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>Snakemake</span>"
     ]
   }
 ]
