@@ -1,0 +1,27 @@
+---
+title: "Snakemake"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H10AdvancedSnakemake.html" title="Advanced Snakemake (Async)"></iframe>
+
+Due Date: Oct 29 @ end of day
+Points: 10
+Display after: Oct 22 @ 5 PM
+-->
+
+
+## Instructions
+
+* For this week's lessons, continue where you left off with the same repository you used for the Intro to Snakemake modules a couple of weeks back.
+* Follow along with these videos and post a link to your updated repository here.
+  * Processing lists of inputs
+  * Handling awkward programs
+  * Finishing the basic workflow
+  * Configuring workflows
+
+## Grading
+
+* For full credit
+  * The exercises are completed on time and pushed to GitHub

@@ -1,0 +1,39 @@
+---
+title: "Bioconductor Project"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/E02project.html" title="Bioconductor Project"></iframe>
+
+Due Date: Dec 3 @ end of day
+Points: 100
+Display after: Nov 19 @ 5 PM
+Group Assignment
+Include all branches
+-->
+
+## Instructions
+
+Clone a copy of the [Bioconductor Project repository](https://classroom.github.com/a/b6JYQKiL) for your group and complete the following tasks:
+
+1. Pick a Bioconductor vignette to learn about and present to the class (different from the example branch).
+
+2. Presentations for this project should be 15 - 20 minutes long and include information on the following:
+
+* Data: Overview of the dataset you used for analysis
+* Methods:
+  * Overview of the analysis methods - "What" did you do?
+  * Tools that you used (programs, packages, etc...) - "How" did you do it?
+  * Take home highlights - "Why" did you do it that way?
+* Results: What interesting things did you learn from the data?
+* Conclusion:
+  * What interesting things / skills did you learn?
+  * What challenges did you come across?
+* Include the following in this repository:
+  * A presentation
+    * Use File > New File > Quarto Presentation... and pick the Reveal JS option
+    * When you render and push, your presentation should automatically be published on the repo website
+  * A document with all analysis details
+    * This should also be rendered as html using Quarto.
+    * Include all code and full analysis details with annotation. It doesn't need to be as detailed as the vignette on Bioconductor, and it should include attribution to the vingette authors.

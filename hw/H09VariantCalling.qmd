@@ -1,0 +1,52 @@
+---
+title: "Variant Calling"
+---
+
+<!--
+# insert into Blackboard assignment with:
+<iframe width="450" height="500" src="https://bifx552-24.github.io/CourseInfo/standalone/hw/H09VariantCalling.html" title="Variant Calling (Async)"></iframe>
+
+Due Date: Nov 5 @ end of day
+Points: 10
+Display after: Oct 29 @ 5 PM
+-->
+
+## Instructions
+
+Fill out the Quarto document, `variant-calling.qmd` in [this repository](https://classroom.github.com/a/L7IUdSFx) while completing the lesson on data wrangling for genomics and submit the generated Word document here.
+
+* Videos
+  * [Background and Metadata]()
+  * [Quality Control]()
+  * [Trimming and Filtering]()
+  * [Variant Calling]()
+
+### Setup
+
+For this lesson, I recommend working on the cluster. Rather than copy the 1+ GB directory with the data for this lesson a bunch of times (once for each person), we'll create a symbolic link to the data and copy over the bits that we will be modifying ourselves. Navigate to your home directory and do the following:
+
+```{{bash}}
+# go home
+cd ~
+
+# create a new `Ecoli` directory
+mkdir Ecoli
+cd Ecoli
+
+# create directories that we will be working with
+mkdir results
+mkdir scripts
+mkdir trimmed_fastq
+
+# link new data directories to your directory
+ln -s /BIODATA/BIFX552/Ecoli/Ecoli_metadata_composite.csv .
+ln -s /BIODATA/BIFX552/Ecoli/data .
+ln -s /BIODATA/BIFX552/Ecoli/untrimmed_fastq .
+```
+
+Should the cluster become unavailable or if you want to work locally (e.g. on your laptop), you can use the Docker container we set up in class or follow the instructions [here](https://datacarpentry.org/genomics-workshop/setup.html) to get your environment set up.
+
+## Grading
+* For full credit
+  * Word document is subbmitted on time
+  * All questions are answered
