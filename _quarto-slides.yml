@@ -1,5 +1,5 @@
 project: 
-  output-dir: docs/standalone
+  output-dir: docs_updt/standalone
   render: 
     - labs/01markdown.qmd
     - labs/02git.qmd

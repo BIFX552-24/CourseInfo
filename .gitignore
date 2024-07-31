@@ -8,6 +8,7 @@ word/
 .Rhistory
 
 docs/
+docs_updt/
 *.html
 index_cache/
 labs/*_cache/
